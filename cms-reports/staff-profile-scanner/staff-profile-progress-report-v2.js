@@ -388,12 +388,6 @@ function createOverallProgressReport(domain) {
 
   })
 
-
-
-
-
-
-
   //setup today's data and time for the report
   var today = new Date();
   today = today.toDateString() + ' ' + today.toLocaleTimeString();
@@ -841,11 +835,8 @@ function createStaffProfileFacultyReport() {
     process.exit();
   }
 
-
   //remove first three headers rows from the data
   staffProfileData.splice(0, 3);
-
-
 
   var staffProfileDataWithFaculties = staffProfileData;
 
@@ -1926,7 +1917,7 @@ function setupHTMLReport(faculty) {
   var htmlReport = '';
   htmlReport += '<html><head>';
   htmlReport += `
-      <title>Staff profile data field analysis</title>
+      <title>Staff profile readiness report</title>
       <!--Chart.js JS CDN-->
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       <link rel="stylesheet" type="text/css" href="../../../../../css/dux-dashboard.css" />`;
