@@ -1913,7 +1913,9 @@ function setupHTMLReport(faculty) {
   var today = new Date();
   today = today.toDateString() + ' ' + today.toLocaleTimeString();
 
+  //
   //create html report
+  //
   var htmlReport = '';
   htmlReport += '<html><head>';
   htmlReport += `
