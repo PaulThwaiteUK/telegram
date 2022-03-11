@@ -1,0 +1,127 @@
+/*
+[
+  {
+    "domain": "oneweb.soton.ac.uk",
+    "path": "/",
+    "name": "actualOptanonConsent",
+    "value": "%2C1%2C2%2C3%2C4%2C0_55263%2C0_55262%2C0_83523%2C0_55265%2C0_55264%2C0_55261%2C0_83515%2C0_83516%2C0_83517%2C0_83518%2C0_83519%2C0_83520%2C",
+    "expirationDate": 1713783476,
+    "hostOnly": false,
+    "httpOnly": false,
+    "secure": false,
+    "session": false,
+    "sameSite": "no_restriction"
+  },
+  {
+    "domain": "www.southampton.ac.uk",
+    "path": "/",
+    "name": "actualOptanonConsent",
+    "value": "%2C1%2C2%2C3%2C4%2C0_55263%2C0_55262%2C0_83523%2C0_55265%2C0_55264%2C0_55261%2C0_83515%2C0_83516%2C0_83517%2C0_83518%2C0_83519%2C0_83520%2C",
+    "expirationDate": 1713783476,
+    "hostOnly": false,
+    "httpOnly": false,
+    "secure": false,
+    "session": false,
+    "sameSite": "no_restriction"
+  }
+]
+*/
+
+[
+  {
+      "domain": ".southampton.ac.uk",
+      "expirationDate": 1652469054,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "actualOptanonConsent",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "%2C1%2C2%2C3%2C4%2C0_55263%2C0_55262%2C0_83523%2C0_55265%2C0_55264%2C0_55261%2C0_83515%2C0_83516%2C0_83517%2C0_83518%2C0_83519%2C0_83520%2C",
+      "id": 6
+  },
+  {
+      "domain": ".southampton.ac.uk",
+      "expirationDate": 1652469053,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "OptanonAlertBoxClosed",
+      "path": "/",
+      "sameSite": "lax",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "2021-05-13T19:10:53.765Z",
+      "id": 7
+  },
+  {
+      "domain": ".southampton.ac.uk",
+      "expirationDate": 1652469053,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "OptanonConsent",
+      "path": "/",
+      "sameSite": "lax",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "isIABGlobal=false&datestamp=Thu+May+13+2021+20%3A10%3A53+GMT%2B0100+(British+Summer+Time)&version=6.16.0&landingPath=NotLandingPage&groups=1%3A1%2C2%3A1%2C3%3A1%2C4%3A1%2C0_55263%3A1%2C0_55262%3A1%2C0_83523%3A1%2C0_55265%3A1%2C0_55264%3A1%2C0_55261%3A1%2C0_83515%3A1%2C0_83516%3A1%2C0_83517%3A1%2C0_83518%3A1%2C0_83519%3A1%2C0_83520%3A1",
+      "id": 8
+  },
+  {
+      "domain": "www.southampton.ac.uk",
+      "expirationDate": 1652469048,
+      "hostOnly": true,
+      "httpOnly": false,
+      "name": "_clck",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "15itt28",
+      "id": 9
+  },
+  {
+      "domain": "www.southampton.ac.uk",
+      "expirationDate": 1621019451,
+      "hostOnly": true,
+      "httpOnly": false,
+      "name": "_clsk",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "18zmwb|1620933051309|1|1|eus2/collect",
+      "id": 10
+  },
+  {
+      "domain": "www.southampton.ac.uk",
+      "hostOnly": true,
+      "httpOnly": true,
+      "name": "BIGipServer~CorpWeb~pool-corpweb-prod-80",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": true,
+      "session": true,
+      "storeId": "0",
+      "value": "2678630592.20480.0000",
+      "id": 11
+  },
+  {
+      "domain": "www.southampton.ac.uk",
+      "hostOnly": true,
+      "httpOnly": true,
+      "name": "JSESSIONID",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": true,
+      "storeId": "0",
+      "value": "1598C872C1AA7D3BBC093940C9A056E6",
+      "id": 12
+  }
+  ]

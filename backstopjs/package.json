@@ -1,0 +1,25 @@
+{
+  "name": "regression_testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-reference": "backstop reference --config=backstop.config.js",
+    "test-approve": "backstop approve --config=backstop.config.js",
+    "test-run": "backstop test --config=backstop.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uosdev/regression_testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uosdev/regression_testing/issues"
+  },
+  "homepage": "https://github.com/uosdev/regression_testing#readme",
+  "dependencies": {
+    "backstopjs": "^5.3.2",
+    "yargs": "^17.0.1"
+  }
+}
