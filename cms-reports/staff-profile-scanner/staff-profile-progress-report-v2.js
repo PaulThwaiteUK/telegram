@@ -1929,7 +1929,7 @@ function setupHTMLReport(faculty) {
     htmlReport += '<div>Report date : ' + today + '</div>';
     htmlReport += '<hr>';
     htmlReport += '<h2>How to use this report</h2>';
-    htmlReport += '<div>The new staff profile is driven by data from source systems  <a href="https://subscribe.soton.ac.uk"  target="_blank" > Subscribe</a> and <a href="https://pure.soton.ac.uk/admin/login.xhtml"  target="_blank" > Pure</a>.  Members of staff update these source systems and their updates automatically pull through on to their staff profile within 24 hours.  </div>';
+    htmlReport += '<div>The new staff profile is driven by data from source systems  <a href="https://subscribe.soton.ac.uk"  target="_blank" > Subscribe</a> and <a href="https://pure.soton.ac.uk/admin/login.xhtml"  target="_blank" > Pure</a>.  Members of staff update these source systems and their updates automatically pull through on to their staff profile within 24 hours.</div>';
     htmlReport += '<br>';
     htmlReport += '<div>A staff profile contains 25 data fields. The report identifies members of staff who have a staff profile and do not align with a faculty and school (in HR and Pure systems).</div>';
     htmlReport += '<br>';
