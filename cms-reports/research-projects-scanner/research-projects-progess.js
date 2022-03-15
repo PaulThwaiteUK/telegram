@@ -760,7 +760,7 @@ function setupHTMLReport(faculty) {
   return htmlReport;
 }
 
-function generateFacultyProgressReport(projectData) {
+function generateFunderReport(projectData) {
 
   //
   //funder
@@ -1007,7 +1007,7 @@ var researchProjectData = getResearchProjectData();
 generateReportByFaculty(researchProjectData);
 
 //generate faculty dashboard
-generateFacultyProgressReport(researchProjectData);
+generateFunderReport(researchProjectData);
 
 
 

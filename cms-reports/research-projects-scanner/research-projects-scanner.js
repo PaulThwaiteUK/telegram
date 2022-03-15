@@ -97,7 +97,7 @@ async function generateReport(urllimit, domain, debug) {
     browser = await puppeteer.launch();
     page = await browser.newPage();
     await page.setDefaultNavigationTimeout(120000);
-    await page.goto('https://oneweb.pprd.soton.ac.uk');
+    await page.goto('https://oneweb.soton.ac.uk');
     //await page.setViewport({ width: 1300, height: 5000 });
   } catch (error) {
     console.log('Unable to startup browser ' + error);
@@ -162,7 +162,7 @@ async function generateReport(urllimit, domain, debug) {
           browser = await puppeteer.launch();
           page = await browser.newPage();
           await page.setDefaultNavigationTimeout(120000);
-          await page.goto('https://oneweb.pprd.soton.ac.uk');
+          await page.goto('https://oneweb.soton.ac.uk');
           refreshPageInstanceCount = 0;
         }
 
@@ -173,6 +173,7 @@ async function generateReport(urllimit, domain, debug) {
         projectPageLoadTime = projectPageLoadTime.toFixed(2);
 
       } catch (error) {
+
         if (error.toString().indexOf('Navigation failed because browser has disconnected!') != -1) {
           console.log('Error detected with the browser.  Starting a new browser.');
           browser = await puppeteer.launch();
@@ -196,6 +197,7 @@ async function generateReport(urllimit, domain, debug) {
           projectPageLoadTime = projectPageLoadTime.toFixed(2);
         }
 
+        console.log(error);
 
       }
 
@@ -1032,13 +1034,13 @@ async function runner_GenerateReport(urllimit, domain, debug) {
   for (let row = 0; row < projectDataFinal.length; row++) {
     const theRow = projectDataFinal[row];
 
-    for (let column = 4; column < 29; column++) {
+    for (let column = 6; column < 29; column++) {
       const theColumn = projectDataFinal[row][column];
 
       if (theColumn == 'YES') {
-        chartDataYes[column - 4]++;
+        chartDataYes[column - 6]++;
       } else {
-        chartDataNo[column - 4]++;
+        chartDataNo[column - 6]++;
       }
     }
   }
