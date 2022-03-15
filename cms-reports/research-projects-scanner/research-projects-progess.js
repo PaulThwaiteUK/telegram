@@ -293,7 +293,7 @@ function createResearchProjectProgressIndexPage(facultyCount) {
   htmlReport += '<hr>';
   htmlReport += '<h2>Number of research projects by faculty </h2>';
   htmlReport += '<div> </div>';
-  htmlReport += '<div><canvas id="myChart" style="height:50%;max-height:400" style="width:75%;max-width:600px"></canvas></div>';
+  htmlReport += '<div><canvas id="myChart" style="height:50%;max-height:300" style="width:75%;max-width:300px"></canvas></div>';
   htmlReport += '<br>';
   htmlReport += '<hr>';
   htmlReport += '<h2>Faculty progress</h2>';
