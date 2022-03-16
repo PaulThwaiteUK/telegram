@@ -200,13 +200,23 @@ async function generateReport(urllimit, domain, debug) {
                 if (refreshPageInstanceCount == 1000) {
                     console.log('Page load threshold met. Starting a new browser session.');
                     await page.close();
+                    console.log('--> closed page');
                     await browser.close();
-                    browser = await puppeteer.launch();
+                    console.log('--> closed browser');
+                    //browser = await puppeteer.launch();
+                    browser = await puppeteer.launch({
+                      timeout: 120000,
+                      headless: true,
+                      args: ['--no-sandbox']
+                  });
+                    console.log('--> launched new browser');
                     page = await browser.newPage();
+                    console.log('--> launched new page');
                     await page.setDefaultNavigationTimeout(120000);
-                    await page.goto('https://oneweb.pprd.soton.ac.uk');
+                    await page.goto('https://oneweb.soton.ac.uk');
+                    console.log('--> loaded test page, ready to carry on');
                     refreshPageInstanceCount = 0;
-                }
+                  }
 
                 var timeBefore = new Date();
                 await page.goto(personURL);
