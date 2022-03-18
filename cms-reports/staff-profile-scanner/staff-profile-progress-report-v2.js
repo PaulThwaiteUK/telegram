@@ -511,7 +511,7 @@ function createOverallProgressReport(domain) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital UX Team - Staff Profile Dashboard - Progress Charts</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" type="text/css" href="../../../../css/dux-dashboard.css" />`
+    <link rel="stylesheet" type="text/css" href="../../../../../css/dux-dashboard.css" />`
 
   htmlReport += '<header id="mainheader"> <div class="container"> <h1>Digital UX Team - Staff Profile Dashboard - Progress Charts</h1></div></header>';
   htmlReport += '<section class="mainsection">';
@@ -1270,7 +1270,7 @@ function createStaffProfileProgressIndexPage(facultyReportData, facultyCount, st
 
   htmlReport += '<header id="mainheader"> <div class="container"> <h1>Digital UX Team - Staff Profile Dashboard</h1></div></header>';
   htmlReport += '<section class="mainsection">';
-  htmlReport += '<div id="reportdate">Dashboard date : ' + today + '</div>';
+  htmlReport += '<div id="reportdate">Updated on ' + today + '</div>';
   htmlReport += '<hr>';
   htmlReport += '<h2>Staff profiles by faculty</h2>';
   //htmlReport += '<div> </div>';
