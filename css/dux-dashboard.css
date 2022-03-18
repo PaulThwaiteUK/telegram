@@ -1,25 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-          
-html, body {
-    font-family: 'Roboto';
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+html,
+body {
+  font-family: "Roboto";
+  margin: 0;
 }
 
-table, th, td {
-                border: 1px solid black;
-                border-collapse: collapse;
-                border-color: #808080;
-            }
-  
- table {
-    width: 130%;
- }
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
 
- table.fixed {
-    table-layout: fixed;
- }
- 
- td:nth-child(1) {
-    width: 16%;
- }
-  
- .chart-container { width:1000px; height:480px}
+#mainheader {
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+.mainsection {
+  padding: 10px 20px 10px 20px;
+  margin-top: 10px;
+  line-height: 1.4em;
+  color: #36454f;
+}
+
+.mainsection h2 {
+  padding-top: 10px;
+}
+
+.mainsection div {
+  padding-top: 10px;
+}
+
+#mainfooter {
+  background: #333;
+  color: white;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  bottom: 0px;
+  font-size: 18px;
+  position: absolute;
+  vertical-align: middle;
+  padding-top: 5px;
+}
+
+#mainfooter a {
+  color: white;
+  text-decoration: underline;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-color: #808080;
+}
+
+table {
+  width: 130%;
+}
+
+table.fixed {
+  table-layout: fixed;
+}
+
+td:nth-child(1) {
+  width: 16%;
+}
+
+.chart-container {
+  width: 1000px;
+  height: 480px;
+}
