@@ -4,6 +4,9 @@ html,
 body {
   font-family: "Roboto";
   margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -24,10 +27,11 @@ a {
 }
 
 .mainsection {
-  padding: 10px 20px 10px 20px;
+  padding: 10px 25px 10px 25px;
   margin-top: 10px;
   line-height: 1.4em;
   color: #36454f;
+  font-size: 17px;
 }
 
 .mainsection h2 {
@@ -38,7 +42,7 @@ a {
   padding-top: 10px;
 }
 
-#mainfooter {
+#mainfooter22 {
   background: #333;
   color: white;
   text-align: center;
@@ -51,9 +55,35 @@ a {
   padding-top: 5px;
 }
 
+#mainfooter {
+  background: #333;
+  color: white;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  font-size: 18px;
+  margin-top: auto;
+  vertical-align: middle;
+  padding-top: 5px;
+}
+
 #mainfooter a {
   color: white;
   text-decoration: underline;
+}
+
+#reportdate {
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+#jumptotop {
+  padding-bottom: 10px;
+}
+
+.facultytable h3 {
+  padding-top: 20px;
+  margin-bottom: 5px;
 }
 
 table,
@@ -79,4 +109,12 @@ td:nth-child(1) {
 .chart-container {
   width: 1000px;
   height: 480px;
+}
+
+.facultytable table {
+  width: 135%;
+}
+
+.facultytable td:nth-child(1) {
+  width: 20%;
 }

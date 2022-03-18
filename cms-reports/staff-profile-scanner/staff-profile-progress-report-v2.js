@@ -148,7 +148,7 @@ function performStaffProfileDiff(domain) {
   htmlReport += '<html><head><link rel="stylesheet" type="text/css" href="../../../../../css/dux-dashboard.css" /></head><body>';
   htmlReport += '<h1>Digital UX - Staff profile difference report</h1>';
   //htmlReport += '<br>';
-  htmlReport += '<h2>Report date : ' + today + ' on the ' + domain + ' server</h2>';
+  htmlReport += '<h2>Updated on ' + today + ' on the ' + domain + ' server</h2>';
   htmlReport += '<hr>';
   htmlReport += '<h2>Summary</h2>';
   htmlReport += '<div><ul><li>' + staffProfilesAddedCount + ' <a href="#added"> staff profiles have been ADDED </a>';
@@ -506,28 +506,17 @@ function createOverallProgressReport(domain) {
   //create html report
   var htmlReport = '';
   htmlReport += '<html><head>';
-  htmlReport += `<style>
-          table,
-          th,
-          td {
-              border: 1px solid black;
-              border-collapse: collapse;
-              border-color: #808080;
-          }
-
-          
-
-      </style>
-      
+  htmlReport += `      
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff profile data field analysis</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>`
+    <title>Digital UX Team - Staff Profile Dashboard - Progress Charts</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../../css/dux-dashboard.css" />`
 
-
-  htmlReport += '<h1>Digital UX - Staff profile progress report</h1>';
+  htmlReport += '<header id="mainheader"> <div class="container"> <h1>Digital UX Team - Staff Profile Dashboard - Progress Charts</h1></div></header>';
+  htmlReport += '<section class="mainsection">';
   //htmlReport += '<br>';
-  htmlReport += '<div>Report date : ' + today + '</div>';
+  htmlReport += '<div id="reportdate">Updated on ' + today + '</div>';
   htmlReport += '<hr>';
   //htmlReport += '<h2>Staff profiles added and removed since launch</h2>';
   //htmlReport += '<div>The new staff profile is contolled by Subscribe.  Staff members can make their Subscribe profile public to get a new staff profile.  When a Subscribe profile is made private the new staff profile is removed.   </div>';
@@ -540,14 +529,14 @@ function createOverallProgressReport(domain) {
   //htmlReport += '<br>';
   //htmlReport += progressDataExportHTMLTable;
   //htmlReport += '<hr>';
-  htmlReport += '<h2>Progress of data field completion since launch - bar chart</h2>';
-  htmlReport += '<div>This chart illustrates the current completion of all staff profile data fields.  Staff members update these fields in source systems Subscribe and Pure.</div>';
-  htmlReport += '<br>';
+  htmlReport += '<h2>Progress of data field completion since launch</h2>';
+  htmlReport += '<div>An illustration of current data field completion of all staff profiles across all faculties since beta launch on 2 December 2021.</div>';
+  //htmlReport += '<br>';
   htmlReport += '<div><canvas id="myChart2" style="height:75%;max-height:600" style="width:75%;max-width:1200px"></canvas></div>';
   htmlReport += '<hr>';
-  htmlReport += '<h2>Progress of data field completion since launch - radar chart</h2>';
-  htmlReport += '<div>The same data as the previous chart depicted as a radar chart.</div>';
-  htmlReport += '<br>';
+  htmlReport += '<h2>Data field analysis across staff profile</h2>';
+  htmlReport += '<div>An illusration of the areas of staff profile which need the most work in terms of data field completion. </div>';
+  //htmlReport += '<br>';
   htmlReport += '<div><canvas id="myChart3" style="height:75%;max-height:600" style="width:75%;max-width:1200px"></canvas></div>';
   htmlReport += '<hr>';
 
@@ -685,13 +674,13 @@ function createOverallProgressReport(domain) {
             {
               label: 'BETA LAUNCH - 2 DEC',
               data: [${launchDataYes}],
-              backgroundColor: CHART_COLORS.green,
+              backgroundColor: CHART_COLORS.orange,
               stack: 'Stack 0',
             },
             {
               label: '${todayDate}',
               data: [${chartDataYes}],
-              backgroundColor: CHART_COLORS.blue,
+              backgroundColor: CHART_COLORS.red,
               stack: 'Stack 1',
             },
           ]
@@ -745,9 +734,9 @@ function createOverallProgressReport(domain) {
           label: '${todayDate}',
           data: [${chartDataYes}],
           fill: false,
-          backgroundColor:  CHART_COLORS.blue,
+          backgroundColor:  CHART_COLORS.red,
           //backgroundColor: 'rgba(54, 162, 235, 0.2)',
-          borderColor: 'rgb(54, 162, 235)',
+          borderColor: CHART_COLORS.red,
           //pointBackgroundColor: 'rgb(54, 162, 235)',
           //pointBorderColor: '#fff',
           //pointHoverBackgroundColor: '#fff',
@@ -791,8 +780,21 @@ function createOverallProgressReport(domain) {
     })
   </script>`
 
-
-
+  htmlReport += '</section>';
+  htmlReport += `<footer id="mainfooter">
+      <p>
+        Please use the weekly delivery clinics (Wednesday, 10:15am) with the
+        DUX, ADOFOS and FOS teams for assistance with this dashboard.
+      </p>
+      <p>
+        Contact
+        <a
+          href="mailto:paul.thwaite@soton.ac.uk?subject=Please invite me to a delivery clinic"
+          >Paul Thwaite</a
+        >
+        to attend a future clinic.
+      </p>
+    </footer>`;
 
   htmlReport += '</body></html>';
   fs.writeFileSync(REPORTS_DATA_FOLDER + 'staff-profile/overall-progress/html/staff-profile-progress-' + timestamp + '.html', htmlReport);
@@ -1257,7 +1259,7 @@ function createStaffProfileProgressIndexPage(facultyReportData, facultyCount, st
       
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff profile data field analysis</title>
+    <title>Digital UX Team - Staff Profile Dashboard</title>
     <!--Chart.js JS CDN-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" type="text/css" href="../../../../../css/dux-dashboard.css" />`
@@ -1265,23 +1267,23 @@ function createStaffProfileProgressIndexPage(facultyReportData, facultyCount, st
 
 
   htmlReport += '</head><body>';
-  htmlReport += '<h1>Digital UX - Staff profile readiness report by faculty</h1>';
-  //htmlReport += '<br>';
-  //htmlReport += '<h2>Report date : ' + today + '</h2>';
-  htmlReport += '<div>Report date : ' + today + '</div>';
+
+  htmlReport += '<header id="mainheader"> <div class="container"> <h1>Digital UX Team - Staff Profile Dashboard</h1></div></header>';
+  htmlReport += '<section class="mainsection">';
+  htmlReport += '<div id="reportdate">Dashboard date : ' + today + '</div>';
   htmlReport += '<hr>';
-  htmlReport += '<h2>Number of staff profiles by faculty</h2>';
-  htmlReport += '<div> </div>';
+  htmlReport += '<h2>Staff profiles by faculty</h2>';
+  //htmlReport += '<div> </div>';
   htmlReport += '<div><canvas id="myChart" style="height:50%;max-height:300" style="width:75%;max-width:300px"></canvas></div>';
-  htmlReport += '<br>';
+  //htmlReport += '<br>';
   htmlReport += '<hr>';
-  htmlReport += '<h2>Faculty readiness</h2>';
+  htmlReport += '<h2>Faculty progress</h2>';
   htmlReport += '<div>Select your faculty from the list below to view your faculty\'s current readiness. </div>';
-  htmlReport += '<br>';
-  htmlReport += '<div>Staff profiles are grouped by faculty and school.  The faculty and school data is based on data from Pure and HR.  Some staff profiles do not have a faculty and school assigned.  These staff profiles can be found in the \'Faculty not set\' report.  </div>';
-  htmlReport += '<br>';
-  htmlReport += '<div>Some data fields will not apply to every staff member.  See further information in the faculty report.  Use this report as a general guide to staff profile readiness only.  </div>';
-  htmlReport += '<br><ul>';
+  //htmlReport += '<br>';
+  htmlReport += '<div>Staff profiles are grouped by faculty and school.  The faculty and school data is based on data from Pure and HR.  Some staff profiles do not have a faculty and school assigned.  These staff profiles can be found in the \'Faculty not set\' dashboard.  </div>';
+  //htmlReport += '<br>';
+  htmlReport += '<div>Some data fields will not apply to every staff member.  See further information in the faculty report.  Use this dashboard as a general guide to staff profile readiness only.  </div>';
+  htmlReport += '<ul>';
   console.log(REPORTS_DATA_FOLDER);
   htmlReport += '<li><a href="staff-profile-faculty-progress-faculty-of-arts-and-humanities.html" > Faculty of Arts and Humanities</a>';
   htmlReport += '<li><a href="staff-profile-faculty-progress-faculty-of-engineering-and-physical-sciences.html" > Faculty of Engineering and Physical Sciences</a>';
@@ -1416,7 +1418,22 @@ function createStaffProfileProgressIndexPage(facultyReportData, facultyCount, st
       </script>`;
 
   //save the html file
-  htmlReport += '</body></html>';
+  htmlReport += '</section>';
+  htmlReport += `<footer id="mainfooter">
+      <p>
+        Please use the weekly delivery clinics (Wednesday, 10:15am) with the
+        DUX, ADOFOS and FOS teams for assistance with this dashboard.
+      </p>
+      <p>
+        Contact
+        <a
+          href="mailto:paul.thwaite@soton.ac.uk?subject=Please invite me to a delivery clinic"
+          >Paul Thwaite</a
+        >
+        to attend a future clinic.
+      </p>
+    </footer>`;
+    htmlReport += ' </body></html>';
   fs.writeFileSync(REPORTS_DATA_FOLDER + 'staff-profile/faculty-progress/html/staff-profile-faculty-progress.html', htmlReport);
 
   return htmlReport;
@@ -1425,7 +1442,7 @@ function createStaffProfileProgressIndexPage(facultyReportData, facultyCount, st
 
 function generateHTMLReport(facultyReportData, faculty, schools, departments, profileCount) {
 
-  //setup html report with standard content
+  //setup html dashboard with standard content
   var htmlReport = setupHTMLReport(faculty);
 
   //if 'no faculty set' sort by schood/departments
@@ -1468,11 +1485,11 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
     htmlReport += '<div id="jumptotop"</div>';
     htmlReport += '<h2>Progress for each member of staff</h2>';
     htmlReport += '<div>The ' + faculty + ' has ' + profileCount + ' staff profiles. The overall completion of data fields is ' + facultyScore + '%. </div>';
-    htmlReport += '<br>';
-    htmlReport += '<div>The report identifies the fields which contain data for each member of staff. </div>';
-    htmlReport += '<br>';
-    htmlReport += '<div>Use the report to encourage and guide staff to update their staff profile. </div>';
-    htmlReport += '<br>';
+    //htmlReport += '<br>';
+    htmlReport += '<div>The dashboard identifies the fields which contain data for each member of staff. </div>';
+    //htmlReport += '<br>';
+    htmlReport += '<div>Use the dashboard to encourage and guide staff to update their staff profile. </div>';
+    //htmlReport += '<br>';
     htmlReport += '<div>How do I read this report? </div>';
     //htmlReport += '<br>';
     htmlReport += '<ul><li>YES = the data field contains information on the staff profile ';
@@ -1485,21 +1502,22 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
     htmlReport += '<div id="jumptotop"</div>';
     htmlReport += '<h2>Progress for each member of staff</h2>';
     htmlReport += '<div>The ' + faculty + ' has ' + profileCount + ' staff profiles. The overall completion of data fields is ' + facultyScore + '%. </div>';
-    htmlReport += '<br>';
-    htmlReport += '<div>The report identifies the fields which contain data for each member of staff in your faculty. The report is broken down by school. </div>';
-    htmlReport += '<br>';
-    htmlReport += '<div>Use the report to encourage and guide faculty staff to update their staff profile. </div>';
-    htmlReport += '<br>';
+    //htmlReport += '<br>';
+    htmlReport += '<div>The dashboard identifies the fields which contain data for each member of staff in your faculty. The dashboard is broken down by school. </div>';
+    //htmlReport += '<br>';
+    htmlReport += '<div>Use the dashboard to encourage and guide faculty staff to update their staff profile. </div>';
+    //htmlReport += '<br>';
     htmlReport += '<div>How do I read this report? </div>';
     //htmlReport += '<br>';
     htmlReport += '<ul><li>YES = the data field contains information on the staff profile ';
     htmlReport += '<li>NO = the data field is empty on the staff profile.  Guide the member of staff to update their staff profile </ul>';
     //htmlReport += '<br>';
   }
-  htmlReport += '<br>';
+  //htmlReport += '<br>';
   htmlReport += '<div id="jumptotop"</div>';
+  htmlReport += '<section class="facultytable">';
   htmlReport += 'Jump to school : ';
-
+  
   var numberSchools = schools.length;
   var position = 0;
   schools.forEach(school => {
@@ -1513,7 +1531,7 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
     }
     position++;
   })
-  htmlReport += '<br><br>';
+  //htmlReport += '<br><br>';
 
   var facultyProfiles = [];
 
@@ -1536,8 +1554,8 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
 
     var schoolText = school.replace(/\s/g, "-");
     htmlReport += '<h3 id="' + schoolText + '"> ' + school + ' (' + schoolsCount[school] + ') </h3>';
-    htmlReport += '<div><a href="#jumptotop">Jump to top</a></div>';
-    htmlReport += '<br>';
+    htmlReport += '<div id="jumptotop"><a href="#jumptotop">Jump to top</a></div>';
+    //htmlReport += '<br>';
 
     if (facultyReportData[faculty][school] != undefined) {
 
@@ -1579,7 +1597,7 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
 
       //add a table array to the html report
       htmlReport += htmlFunctions.generateTable(profileData);
-      htmlReport += '<br>';
+      //htmlReport += '<br>';
     }
 
     missingFacultyData.sort(function (a, b) {
@@ -1598,6 +1616,22 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
   htmlReport += createFacultyBarChart(facultyProfiles, faculty);
 
   //save the html file
+  htmlReport += '<hr>';
+  htmlReport += '</section>';
+  htmlReport += `<footer id="mainfooter">
+      <p>
+        Please use the weekly delivery clinics (Wednesday, 10:15am) with the
+        DUX, ADOFOS and FOS teams for assistance with this dashboard.
+      </p>
+      <p>
+        Contact
+        <a
+          href="mailto:paul.thwaite@soton.ac.uk?subject=Please invite me to a delivery clinic"
+          >Paul Thwaite</a
+        >
+        to attend a future clinic.
+      </p>
+    </footer>`
   htmlReport += '</body></html>';
   var facultyText = faculty.replace(/\s/g, "-");
   fs.writeFileSync(REPORTS_DATA_FOLDER + 'staff-profile/faculty-progress/html/staff-profile-faculty-progress-' + facultyText.toLowerCase() + '.html', htmlReport);
@@ -1686,7 +1720,7 @@ function createFacultyBarChart(staffProfileDataWithFaculties, faculty) {
             {
               label: 'DATA FIELD COMPLETED',
               data: [${facultyDataCountYesPercent}],
-              backgroundColor: CHART_COLORS.blue,
+              backgroundColor: CHART_COLORS.grey,
             },
             //{
             //  label: 'DATA FIELD EMPTY',
@@ -1771,7 +1805,7 @@ function createFacultyBarChart(staffProfileDataWithFaculties, faculty) {
         {
           label: 'Fields completed',
           data: [${facultyDataCountYesPercent}],
-          backgroundColor: CHART_COLORS.blue,
+          backgroundColor: CHART_COLORS.red,
         }
         //{
         //  label: 'DATA FIELD EMPTY',
@@ -1919,7 +1953,7 @@ function setupHTMLReport(faculty) {
   var htmlReport = '';
   htmlReport += '<html><head>';
   htmlReport += `
-      <title>Staff profile readiness report</title>
+      <title>Digital UX Team - Staff Profile Dashboard</title>
       <!--Chart.js JS CDN-->
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       <link rel="stylesheet" type="text/css" href="../../../../../css/dux-dashboard.css" />`;
@@ -1927,63 +1961,65 @@ function setupHTMLReport(faculty) {
   if (faculty == 'Faculty not set') {
 
     htmlReport += '</head><body>';
-    htmlReport += '<h1>Digital UX - Staff profile readiness report - ' + faculty + '</h1>';
-    htmlReport += '<div>Report date : ' + today + '</div>';
+    htmlReport += '<header id="mainheader"> <div class="container"> <h1>Digital UX Team - Staff Profile Dashboard - ' + faculty + '</h1></div></header>';
+    htmlReport += '<section class="mainsection">';
+    htmlReport += '<div id="reportdate">Updated on ' + today + '</div>';
     htmlReport += '<hr>';
     htmlReport += '<h2>How to use this report</h2>';
     htmlReport += '<div>The new staff profile is driven by data from source systems  <a href="https://subscribe.soton.ac.uk"  target="_blank" > Subscribe</a> and <a href="https://pure.soton.ac.uk/admin/login.xhtml"  target="_blank" > Pure</a>.  Members of staff update these source systems and their updates automatically pull through on to their staff profile within 24 hours.</div>';
-    htmlReport += '<br>';
-    htmlReport += '<div>A staff profile contains 25 data fields. The report identifies members of staff who have a staff profile and do not align with a faculty and school (in HR and Pure systems).</div>';
-    htmlReport += '<br>';
-    htmlReport += '<div>The report contains members of staff whose <a href="https://subscribe.soton.ac.uk"  target="_blank" > Subscribe</a> profile has been made public.  If members of staff are missing, guide them to the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance#how-to-create-your-new-profile"  target="_blank" > how to create your new profile</a> instructions on the staff profile guidance Sharepoint site.</div>';
-    htmlReport += '<br>';
-    htmlReport += '<div>Use the report to identify missing people from your main faculty report and to work with them to update their staff profile. </div>';
-    htmlReport += '<br>';
+    //htmlReport += '<br>';
+    htmlReport += '<div>A staff profile contains 25 data fields. The dashboard identifies members of staff who have a staff profile and do not align with a faculty and school (in HR and Pure systems).</div>';
+    //htmlReport += '<br>';
+    htmlReport += '<div>The dashboard contains members of staff whose <a href="https://subscribe.soton.ac.uk"  target="_blank" > Subscribe</a> profile has been made public.  If members of staff are missing, guide them to the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance#how-to-create-your-new-profile"  target="_blank" > how to create your new profile</a> instructions on the staff profile guidance Sharepoint site.</div>';
+    //htmlReport += '<br>';
+    htmlReport += '<div>Use the dashboard to identify missing people from your main faculty dashboard and to work with them to update their staff profile. </div>';
+    //htmlReport += '<br>';
     htmlReport += '<div>Please note:</div>';
-    htmlReport += '<div><ul>';
+    htmlReport += '<ul>';
     htmlReport += '<li>Some data fields will not apply to all members of staff. For example, Twitter is an optional addition to a staff profile. ';
-    htmlReport += '<li>The members of staff listed in this report do not have a faculty and school defined in their HR and Pure data.';
+    htmlReport += '<li>The members of staff listed in this dashboard do not have a faculty and school defined in their HR and Pure data.';
     htmlReport += '<li>Refer staff members to the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/add-content-staff-profile-first-time.aspx"  target="_blank" > staff profile guidance</a> Sharepoint site for information on how to update their profile.';
     //htmlReport += '<li>The <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance"  target="_blank" > staff profile guidance</a> Sharepoint site provides help and assitance needed for staff members to update their staff profile page.';
-    //htmlReport += '<li>The report will be updated regularly.';
+    //htmlReport += '<li>The dashboard will be updated regularly.';
     htmlReport += '</ul>';
     htmlReport += '<hr>';
     htmlReport += '<h2>Summary of faculty progress</h2>';
     htmlReport += '<div>The chart shows current staff profile readiness.  It shows staff profile field usage across all staff profiles for people with faculty assigned. </div>';
-    htmlReport += '<br>';
+    //htmlReport += '<br>';
     htmlReport += '<div><canvas id="myChart" style="height:75%;max-height:600" style="width:75%;max-width:1200px"></canvas></div>';
-    htmlReport += '<br>';
+    // htmlReport += '<br>';
     htmlReport += '<hr>';
 
   } else {
 
     htmlReport += '</head><body>';
-    htmlReport += '<h1>Digital UX - Staff profile readiness report - ' + faculty + '</h1>';
-    htmlReport += '<div>Report date : ' + today + '</div>';
+    htmlReport += '<header id="mainheader"> <div class="container"> <h1>Digital UX Team - Staff Profile Dashboard - ' + faculty + '</h1></div></header>';
+    htmlReport += '<section class="mainsection">';
+    htmlReport += '<div id="reportdate">Updated on ' + today + '</div>';
     htmlReport += '<hr>';
-    htmlReport += '<h2>How to use this report</h2>';
+    htmlReport += '<h2>How to use this dashboard</h2>';
     htmlReport += '<div>The new staff profile is driven by data from source systems  <a href="https://subscribe.soton.ac.uk"  target="_blank" > Subscribe</a> and <a href="https://pure.soton.ac.uk/admin/login.xhtml"  target="_blank" > Pure</a>.  Members of staff update these source systems and their updates automatically pull through on to their staff profile within 24 hours.  </div>';
-    htmlReport += '<br>';
-    htmlReport += '<div>A staff profile contains 25 data fields. The report identifies which data fields contain information for each member of staff in your faculty. The report is broken down by school. </div>';
-    htmlReport += '<br>';
-    htmlReport += '<div>The report contains members of staff whose <a href="https://subscribe.soton.ac.uk"  target="_blank" > Subscribe</a> profile has been made public.  If members of staff are missing, guide them to the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance#how-to-create-your-new-profile"  target="_blank" > how to create your new profile</a> instructions on the staff profile guidance Sharepoint site.</div>';
-    htmlReport += '<br>';
-    htmlReport += '<div>Use the report to understand your faculty\'s readiness and to work with faculty staff to update their staff profile. </div>';
-    htmlReport += '<br>';
+    //htmlReport += '<br>';
+    htmlReport += '<div>A staff profile contains 25 data fields. The dashboard identifies which data fields contain information for each member of staff in your faculty. The dashboard is broken down by school. </div>';
+    //htmlReport += '<br>';
+    htmlReport += '<div>The dashboard contains members of staff whose <a href="https://subscribe.soton.ac.uk"  target="_blank" > Subscribe</a> profile has been made public.  If members of staff are missing, guide them to the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance#how-to-create-your-new-profile"  target="_blank" > how to create your new profile</a> instructions on the staff profile guidance Sharepoint site.</div>';
+    //htmlReport += '<br>';
+    htmlReport += '<div>Use the dashboard to understand your faculty\'s readiness and to work with faculty staff to update their staff profile. </div>';
+    //htmlReport += '<br>';
     htmlReport += '<div>Please note:</div>';
-    htmlReport += '<div><ul>';
+    htmlReport += '<ul>';
     htmlReport += '<li>Some data fields will not apply to all members of staff. For example, Twitter is an optional addition to a staff profile. ';
     htmlReport += '<li>The faculty and school assignment is based on data provided by Pure and HR.  It is not possible to change these assignments.';
     htmlReport += '<li>Refer staff members to the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/add-content-staff-profile-first-time.aspx"  target="_blank" > staff profile guidance</a> Sharepoint site for information on how to update their profile.';
     //htmlReport += '<li>The <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance"  target="_blank" > staff profile guidance</a> Sharepoint site provides help and assitance needed for staff members to update their staff profile page.';
-    //htmlReport += '<li>The report will be updated regularly.';
+    //htmlReport += '<li>The dashboard will be updated regularly.';
     htmlReport += '</ul>';
     htmlReport += '<hr>';
     htmlReport += '<h2>Summary of faculty progress</h2>';
     htmlReport += '<div>The chart shows your faculty\'s current staff profile readiness.  It shows staff profile field usage across all staff profiles in your faculty. </div>';
-    htmlReport += '<br>';
+    //htmlReport += '<br>';
     htmlReport += '<div><canvas id="myChart" style="height:75%;max-height:600" style="width:75%;max-width:1200px"></canvas></div>';
-    htmlReport += '<br>';
+    //htmlReport += '<br>';
     htmlReport += '<hr>';
   }
 
