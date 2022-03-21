@@ -1,7 +1,11 @@
 
-exports.generateTable = function (data) {
+exports.generateTable = function (data, tableid) {
 
-    var html = '<table border="1" cellpadding="6" cellspacing="5" style="border-collapse:collapse;">';
+    if (tableid != undefined) {
+        var html = '<table id="' + tableid + '" border="1" cellpadding="6" cellspacing="5" style="border-collapse:collapse;">';
+    } else {
+        var html = '<table border="1" cellpadding="6" cellspacing="5" style="border-collapse:collapse;">';
+    }
 
     if (typeof (data[0]) === 'undefined') {
         return null;
