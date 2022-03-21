@@ -22,8 +22,8 @@ body {
 }
 
 a {
-  color: blue;
-  text-decoration: none;
+  color: #0074d9;
+  text-decoration: underline;
 }
 
 .mainsection {
@@ -103,7 +103,7 @@ table.fixed {
 }
 
 td:nth-child(1) {
-  width: 16%;
+  white-space: nowrap;
 }
 
 .chart-container {
