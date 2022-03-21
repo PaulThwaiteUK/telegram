@@ -1282,7 +1282,7 @@ function createStaffProfileProgressIndexPage(facultyReportData, facultyCount, st
   //htmlReport += '<br>';
   htmlReport += '<div>Staff profiles are grouped by faculty and school.  The faculty and school data is based on data from Pure and HR.  Some staff profiles do not have a faculty and school assigned.  These staff profiles can be found in the \'Faculty not set\' dashboard.  </div>';
   //htmlReport += '<br>';
-  htmlReport += '<div>Some data fields will not apply to every staff member.  See further information in the faculty report.  Use this dashboard as a general guide to staff profile readiness only.  </div>';
+  htmlReport += '<div>Some data fields will not apply to every staff member.  See further information in the faculty dashboard.  Use this dashboard as a general guide to staff profile readiness only.  </div>';
   htmlReport += '<ul>';
   console.log(REPORTS_DATA_FOLDER);
   htmlReport += '<li><a href="staff-profile-faculty-progress-faculty-of-arts-and-humanities.html" > Faculty of Arts and Humanities</a>';
