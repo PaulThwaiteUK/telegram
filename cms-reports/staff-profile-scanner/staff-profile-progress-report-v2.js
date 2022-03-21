@@ -1596,7 +1596,7 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
       })
 
       //add a table array to the html report
-      htmlReport += htmlFunctions.generateTable(profileData);
+      htmlReport += htmlFunctions.generateTable(profileData, 'staff-profile-faculty-table');
       //htmlReport += '<br>';
     }
 
