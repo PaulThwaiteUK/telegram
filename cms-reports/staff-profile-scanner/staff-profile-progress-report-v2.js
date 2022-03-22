@@ -1515,7 +1515,7 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
   }
   //htmlReport += '<br>';
   htmlReport += '<div id="jumptotop"</div>';
-  htmlReport += '<section class="facultytable">';
+  htmlReport += '<section class="staff-faculty-table">';
   htmlReport += 'Jump to school : ';
   
   var numberSchools = schools.length;

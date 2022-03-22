@@ -115,10 +115,10 @@ td:nth-child(1) {
   width: 135%;
 }
 
-.facultytable td:nth-child(1) {
+.staff-faculty-table td:nth-child(1) {
   white-space: nowrap;
 }
 
-.facultytable td:nth-child(28) {
+.staff-faculty-table td:nth-child(28) {
   white-space: nowrap;
 }
