@@ -115,10 +115,34 @@ td:nth-child(1) {
   width: 135%;
 }
 
-.staff-faculty-table td:nth-child(1) {
+.staff-profile-faculty-section td:nth-child(1) {
   white-space: nowrap;
 }
 
-.staff-faculty-table td:nth-child(28) {
+.staff-profile-faculty-section td:nth-child(28) {
+  white-space: nowrap;
+}
+
+.research-project-faculty-table table {
+  width: 180%;
+}
+
+.research-project-faculty-section td:nth-child(1) {
+  width: 15%;
+}
+
+.research-project-faculty-section td:nth-child(2) {
+  white-space: nowrap;
+}
+
+.research-project-faculty-section td:nth-child(19) {
+  white-space: nowrap;
+}
+
+.research-project-faculty-section td:nth-child(20) {
+  white-space: nowrap;
+}
+
+.research-project-faculty-section td:nth-child(28) {
   white-space: nowrap;
 }
