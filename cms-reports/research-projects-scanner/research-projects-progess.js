@@ -60,7 +60,7 @@ function getResearchProjectData() {
     let projectResearchOutputs = projectRowArray[21];
     let projectPartners = projectRowArray[22];
 
-    projectData.push([projectURL, projectStatusValue, projectFunderValue, projectLeadResearcherURL, projectDataCount, projectTitle, projectResearchArea, projectResearchGroup, projectLeadResearcher, projectOtherResearchers, projectResearchFunder, projectWebsite, projectStatus, projectOverview, projectStaffLeadResearcher, projectStaffOtherResearchers, projectResearchOutputs, projectPartners, projectLeadResearcerFaculty, projectLeadResearcerSchool]);
+    projectData.push([projectURL, projectStatusValue, projectFunderValue, projectLeadResearcherURL, projectDataCount.toString(), projectTitle, projectResearchArea, projectResearchGroup, projectLeadResearcher, projectOtherResearchers, projectResearchFunder, projectWebsite, projectStatus, projectOverview, projectStaffLeadResearcher, projectStaffOtherResearchers, projectResearchOutputs, projectPartners, projectLeadResearcerFaculty, projectLeadResearcerSchool]);
   })
 
   return projectData;
@@ -79,6 +79,11 @@ function generateReportByFaculty(projectData) {
   const SCHOOL_NOT_DEFINED = 'School not set';
 
   console.log('Total data size = ' + projectData.length);
+
+   //sort data by data index
+   projectData.sort(function (a, b) {
+    return b[4] - a[4];
+  })
 
   //Faculty of Arts and humanities
   var artsSchool = [];
@@ -184,6 +189,10 @@ function generateReportByFaculty(projectData) {
         facultyReportData[faculty][school] = [];
       }
 
+      //remove faculty and school from the data - not needed for the faculty table
+      profileArray.pop();
+      profileArray.pop();
+
       //facultyReportData[faculty][school][department].push([profile]);
       facultyReportData[faculty][school].push([profileArray]);
 
@@ -212,9 +221,9 @@ function generateReportByFaculty(projectData) {
   socSchool.sort();
 
   //sort data by data index
-  facultyReportData.sort(function (a, b) {
-    return b[4] - a[4];
-  })
+  // facultyReportData.sort(function (a, b) {
+  //   return b[4] - a[4];
+  // })
 
   //create html reports for each faculty
   generateHTMLReport(facultyReportData, ART_FACULTY, artsSchool, artsDepartment, artsCount);
@@ -282,27 +291,29 @@ function createResearchProjectProgressIndexPage(facultyCount) {
         
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Research project data field analysis</title>
+      <title>Digital UX Team - Research Project Dashboard</title>
       <!--Chart.js JS CDN-->
-      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>`
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <link rel="stylesheet" type="text/css" href="../../../../../css/dux-dashboard.css" />`;
 
 
   htmlReport += '</head><body>';
-  htmlReport += '<h1>Digital UX - Research project readiness report by faculty</h1>';
-  htmlReport += '<div>Report date : ' + today + '</div>';
+  htmlReport += '<header id="mainheader"> <div class="container"> <h1>Digital UX Team - Research Project Dashboard</h1></div></header>';
+  htmlReport += '<section class="mainsection">';
+  htmlReport += '<div id="reportdate">Updated on ' + today + '</div>';
   htmlReport += '<hr>';
   htmlReport += '<h2>Number of research projects by faculty </h2>';
-  htmlReport += '<div> </div>';
+  //htmlReport += '<div> </div>';
   htmlReport += '<div><canvas id="myChart" style="height:50%;max-height:300" style="width:75%;max-width:300px"></canvas></div>';
-  htmlReport += '<br>';
+  //htmlReport += '<br>';
   htmlReport += '<hr>';
   htmlReport += '<h2>Faculty progress</h2>';
   htmlReport += '<div>Select your faculty below to see the current progress.  </div>';
-  htmlReport += '<br>';
+  //htmlReport += '<br>';
   htmlReport += '<div>Research projects are grouped by faculty and school. The faculty and school data is based on a project\'s lead researcher.  Some research projects do not have a faculty and school assigned and the \'Faculty not set\' report contains more details.  </div>';
-  htmlReport += '<br>';
+  //htmlReport += '<br>';
   htmlReport += '<div>Some data fields will not apply to every research project.  See further information in the faculty report.  Use this report as a general guide to research project readiness only.  </div>';
-  htmlReport += '<br><ul>';
+  htmlReport += '<ul>';
   htmlReport += '<li><a href="research-projects-faculty-progress-faculty-of-arts-and-humanities.html" > Faculty of Arts and Humanities</a>';
   htmlReport += '<li><a href="research-projects-faculty-progress-faculty-of-engineering-and-physical-sciences.html" > Faculty of Engineering and Physical Sciences</a>';
   htmlReport += '<li><a href="research-projects-faculty-progress-faculty-of-environmental-and-life-sciences.html" > Faculty of Environmental and Life Sciences</a>';
@@ -433,6 +444,21 @@ function createResearchProjectProgressIndexPage(facultyCount) {
         </script>`;
 
   //save the html file
+  htmlReport += '</section>';
+  htmlReport += `<footer id="mainfooter">
+      <p>
+        Please use the weekly delivery clinics (Wednesday, 10:15am) with the
+        DUX, ADOFOS and FOS teams for assistance with this dashboard.
+      </p>
+      <p>
+        Contact
+        <a
+          href="mailto:paul.thwaite@soton.ac.uk?subject=Please invite me to a delivery clinic"
+          >Paul Thwaite</a
+        >
+        to attend a future clinic.
+      </p>
+    </footer>`;
   htmlReport += '</body></html>';
   fs.writeFileSync(REPORTS_DATA_FOLDER + 'research-projects/faculty-progress/html/research-projects-faculty-progress.html', htmlReport);
 
@@ -447,28 +473,21 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
   //setup html report with standard content
   var htmlReport = setupHTMLReport(faculty);
 
-  //if 'no faculty set' sort by schood/departments
-  if (faculty == 'Faculty not set') {
-
-    facultyReportData.sort(function (a, b) {
-      return b[36] - a[36];
-    })
-  }
-
   //add detailed section to the the html report
   htmlReport += '<div id="jumptotop"</div>';
   htmlReport += '<h2>Detailed readiness by research project</h2>';
   htmlReport += '<div>The ' + faculty + ' has ' + profileCount + ' research projects. </div>';
-  htmlReport += '<br>';
+  //htmlReport += '<br>';
   htmlReport += '<div>The tables below illustrate the current state of individual research project pages. </div>';
-  htmlReport += '<br>';
+  //htmlReport += '<br>';
   htmlReport += '<div>The report identifies which fields contain data for each member research project in your faculty. The report is broken down by school. </div>';
   //htmlReport += '<br>';
   htmlReport += '<ul><li>YES = data exists on the research project page. ';
   htmlReport += '<li>NO = data does not exist on the research project page.  The project lead researcher needs to update their project in \'Pure\' using the instructions above. </ul>';
   //htmlReport += '<br>';
-  htmlReport += '<br>';
+  //htmlReport += '<br>';
   htmlReport += '<div id="jumptotop"</div>';
+  htmlReport += '<section class="research-project-faculty-section">';
   htmlReport += 'Jump to school : ';
 
   var numberSchools = schools.length;
@@ -484,7 +503,7 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
     }
     position++;
   })
-  htmlReport += '<br><br>';
+  //htmlReport += '<br><br>';
 
   var facultyProfiles = [];
   var count = 0;
@@ -501,7 +520,7 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
 
     var schoolText = school.replace(/\s/g, "-");
     htmlReport += '<h3 id="' + schoolText + '"> ' + school + ' (' + schoolsCount[school] + ') </h3>';
-    htmlReport += '<div><a href="#jumptotop">Jump to top</a></div>';
+    htmlReport += '<div id="jumptotop"><a href="#jumptotop">Jump to top</a></div>';
     htmlReport += '<br>';
 
     if (facultyReportData[faculty][school] != undefined) {
@@ -509,21 +528,12 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
       var data = facultyReportData[faculty][school];
       var profileData = [];
 
-      profileData.push(['Project title', 'Status', 'Funder', 'Lead researcher name', 'Data index (26)', 'Title', 'Research area', 'Research groups', 'Lead researcher', 'Other researches', 'Research funder', 'Research website', 'Research status', 'Research overview', 'Research lead researcher', 'Research other researchers', 'Research outputs', 'Research partners']);
+      profileData.push(['Project title', 'Status', 'Funder', 'Lead researcher name', 'Data index (13)', 'Title', 'Research area', 'Research groups', 'Lead researcher', 'Other researches', 'Research funder', 'Research website', 'Research status', 'Research overview', 'Research lead researcher', 'Research other researchers', 'Research outputs', 'Research partners']);
 
       data.forEach(element => {
 
         //create array
         var theProfile = element.toString().split(',');
-
-        //add 
-        /*if (faculty == 'Faculty not set') {
-
-            if (theProfile[35] != '') {
-                tempcount++;
-            }
-        }
-        */
 
         //add profile to array for html tables
         profileData.push(theProfile);
@@ -535,11 +545,8 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
         count++;
       })
 
-      //console.log(profileData);
-
       //add a table array to the html report
-      htmlReport += htmlFunctions.generateTable(profileData);
-      htmlReport += '<br>';
+      htmlReport += htmlFunctions.generateTable(profileData, 'research-project-faculty-table');
     }
 
     missingFacultyData.sort(function (a, b) {
@@ -558,6 +565,21 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
   htmlReport += createFacultyBarChart(facultyProfiles, faculty);
 
   //save the html file
+  htmlReport += '</section>';
+  htmlReport += `<footer id="mainfooter">
+      <p>
+        Please use the weekly delivery clinics (Wednesday, 10:15am) with the
+        DUX, ADOFOS and FOS teams for assistance with this dashboard.
+      </p>
+      <p>
+        Contact
+        <a
+          href="mailto:paul.thwaite@soton.ac.uk?subject=Please invite me to a delivery clinic"
+          >Paul Thwaite</a
+        >
+        to attend a future clinic.
+      </p>
+    </footer>`
   htmlReport += '</body></html>';
   var facultyText = faculty.replace(/\s/g, "-");
   fs.writeFileSync(REPORTS_DATA_FOLDER + 'research-projects/faculty-progress/html/research-projects-faculty-progress-' + facultyText.toLowerCase() + '.html', htmlReport);
@@ -729,33 +751,33 @@ function setupHTMLReport(faculty) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Research project data field analysis</title>
         <!--Chart.js JS CDN-->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>`;
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../../../../css/dux-dashboard.css" />`;
 
 
   htmlReport += '</head><body>';
-  htmlReport += '<h1>Digital UX - Research project readiness report - ' + faculty + '</h1>';
-  //htmlReport += '<br>';
-  //htmlReport += '<h2>Report date : ' + today + '</h2>';
-  htmlReport += '<div>Report date : ' + today + '</div>';
+  htmlReport += '<header id="mainheader"> <div class="container"> <h1>Digital UX Team - Research Project Dashboard - ' + faculty + '</h1></div></header>';
+  htmlReport += '<section class="mainsection">';
+  htmlReport += '<div id="reportdate">Updated on ' + today + '</div>';
   htmlReport += '<hr>';
   htmlReport += '<h2>How to use this report</h2>';
   htmlReport += '<div>The new research projects are driven by data from \'Pure\'.  Project leads update \'Pure\' and the data automatically displays on their research project page.  </div>';
-  htmlReport += '<br>';
+  //htmlReport += '<br>';
   htmlReport += '<div>A research project page is made up of 13 data fields.  </div>';
-  htmlReport += '<div><ul>';
+  htmlReport += '<ul>';
   htmlReport += '<li>9 fields are driven by data from \'Pure\'.  Lead researchers update their project data in \'Pure\' and it will automatically display on their research project';
   htmlReport += '<li>3 fields are controlled by the Digital User Experience team.  No further action is needed.';
-  htmlReport += '<div></ul>';
+  htmlReport += '</ul>';
   htmlReport += 'The <a href="https://sotonac.sharepoint.com/teams/research-project-guidance"  target="_blank" > resease project guidance</a> Sharepoint site provides help and assitance needed for lead researchers to update their research project page.';
   htmlReport += '<hr>';
   htmlReport += '<h2>Summary of progress</h2>';
   htmlReport += '<div>The chart below illustrates your faculty\'s current research project readiness.  It shows the number of data fields containing data across all research projects assigned to your faculty (based on a project\'s lead researcher).   </div>';
-  htmlReport += '<br>';
+  //htmlReport += '<br>';
   htmlReport += '<div>Not all data fields will apply to every research project.  Use this chart as a general guide to readiness only.  </div>';
-  htmlReport += '<br>';
+  //htmlReport += '<br>';
   htmlReport += '<div><canvas id="myChart" style="height:75%;max-height:600" style="width:75%;max-width:1200px"></canvas></div>';
-  htmlReport += '<br>';
-  htmlReport += '<hr>';
+  //htmlReport += '<br>';
+  //htmlReport += '<hr>';
 
   return htmlReport;
 }

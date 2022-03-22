@@ -977,7 +977,7 @@ async function runner_GenerateReport(urllimit, domain, debug) {
   //
   ///sort the data by data count
   projectDataCSV.sort(function (a, b) {
-    return b[7] - a[7];
+    return b[8] - a[8];
   })
 
   //add header to report
