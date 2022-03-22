@@ -8,3 +8,4 @@ password.txt
 cms-reports/staff-profile-scanner/staff-profile-scanner copy.js
 *.sh
 cms-reports/staff-profile-scanner/datafile.csv
+backstopjs/scenarios/backstop-regression-tests.json
