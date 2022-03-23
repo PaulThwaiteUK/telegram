@@ -1979,6 +1979,8 @@ function setupHTMLReport(faculty) {
     htmlReport += '<li>Some data fields will not apply to all members of staff. For example, Twitter is an optional addition to a staff profile. ';
     htmlReport += '<li>The members of staff listed in this dashboard do not have a faculty and school defined in their HR and Pure data.';
     htmlReport += '<li>Refer staff members to the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/add-content-staff-profile-first-time.aspx"  target="_blank" > staff profile guidance</a> Sharepoint site for information on how to update their profile.';
+    htmlReport += '<li>User feedback is documented in the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/known-problems-with-staff-profiles.aspx"  target="_blank" >known problems with staff profiles</a> section of the Sharepoint site.';
+
     //htmlReport += '<li>The <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance"  target="_blank" > staff profile guidance</a> Sharepoint site provides help and assitance needed for staff members to update their staff profile page.';
     //htmlReport += '<li>The dashboard will be updated regularly.';
     htmlReport += '</ul>';
@@ -2011,6 +2013,7 @@ function setupHTMLReport(faculty) {
     htmlReport += '<li>Some data fields will not apply to all members of staff. For example, Twitter is an optional addition to a staff profile. ';
     htmlReport += '<li>The faculty and school assignment is based on data provided by Pure and HR.  It is not possible to change these assignments.';
     htmlReport += '<li>Refer staff members to the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/add-content-staff-profile-first-time.aspx"  target="_blank" > staff profile guidance</a> Sharepoint site for information on how to update their profile.';
+    htmlReport += '<li>User feedback is documented in the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/known-problems-with-staff-profiles.aspx"  target="_blank" >known problems with staff profiles</a> section of the Sharepoint site.';
     //htmlReport += '<li>The <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance"  target="_blank" > staff profile guidance</a> Sharepoint site provides help and assitance needed for staff members to update their staff profile page.';
     //htmlReport += '<li>The dashboard will be updated regularly.';
     htmlReport += '</ul>';
