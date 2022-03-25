@@ -511,7 +511,11 @@ function createOverallProgressReport(domain) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital UX Team - Staff Profile Dashboard - Progress Charts</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" type="text/css" href="../../../../../css/dux-dashboard.css" />`
+    <link rel="stylesheet" type="text/css" href="../../../../../css/dux-dashboard.css" />
+    <link
+      rel="icon"
+      href="http://dux.soton.ac.uk/drupal-reports/favicon/favicon.ico"
+    />`;
 
   htmlReport += '<header id="mainheader"> <div class="container"> <h1>Digital UX Team - Staff Profile Dashboard - Progress Charts</h1></div></header>';
   htmlReport += '<section class="mainsection">';
@@ -782,19 +786,24 @@ function createOverallProgressReport(domain) {
 
   htmlReport += '</section>';
   htmlReport += `<footer id="mainfooter">
-      <p>
-        Please use the weekly delivery clinics (Wednesday, 10:15am) with the
-        DUX, ADOFOS and FOS teams for assistance with this dashboard.
-      </p>
-      <p>
-        Contact
-        <a
-          href="mailto:paul.thwaite@soton.ac.uk?subject=Please invite me to a delivery clinic"
-          >Paul Thwaite</a
-        >
-        to attend a future clinic.
-      </p>
-    </footer>`;
+  <p>
+  Use the weekly delivery clinics (Wednesday, 10:15) with DUX, ADOFOS and
+  FOS teams for help with the dashboard. &nbsp;Contact
+  <a
+    href="mailto:paul.thwaite@soton.ac.uk?subject=Please invite me to a delivery clinic"
+    >Paul Thwaite</a
+  >
+  to attend a clinic.
+  </p>
+  <p>
+  Found a bug? &nbsp; Please
+  <a
+    href="http://dux.soton.ac.uk/faculty-readiness-dashboard/report-a-bug.html"
+    >report it on the bug report
+  </a>
+  page.
+  </p>
+  </footer>`;
 
   htmlReport += '</body></html>';
   fs.writeFileSync(REPORTS_DATA_FOLDER + 'staff-profile/overall-progress/html/staff-profile-progress-' + timestamp + '.html', htmlReport);
@@ -1262,7 +1271,11 @@ function createStaffProfileProgressIndexPage(facultyReportData, facultyCount, st
     <title>Digital UX Team - Staff Profile Dashboard</title>
     <!--Chart.js JS CDN-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" type="text/css" href="../../../../../css/dux-dashboard.css" />`
+    <link rel="stylesheet" type="text/css" href="../../../../../css/dux-dashboard.css" />
+    <link
+      rel="icon"
+      href="http://dux.soton.ac.uk/drupal-reports/favicon/favicon.ico"
+    />`;
 
 
 
@@ -1420,18 +1433,23 @@ function createStaffProfileProgressIndexPage(facultyReportData, facultyCount, st
   //save the html file
   htmlReport += '</section>';
   htmlReport += `<footer id="mainfooter">
-      <p>
-        Please use the weekly delivery clinics (Wednesday, 10:15am) with the
-        DUX, ADOFOS and FOS teams for assistance with this dashboard.
-      </p>
-      <p>
-        Contact
-        <a
-          href="mailto:paul.thwaite@soton.ac.uk?subject=Please invite me to a delivery clinic"
-          >Paul Thwaite</a
-        >
-        to attend a future clinic.
-      </p>
+  <p>
+  Use the weekly delivery clinics (Wednesday, 10:15) with DUX, ADOFOS and
+  FOS teams for help with the dashboard. &nbsp;Contact
+  <a
+    href="mailto:paul.thwaite@soton.ac.uk?subject=Please invite me to a delivery clinic"
+    >Paul Thwaite</a
+  >
+  to attend a clinic.
+</p>
+<p>
+  Found a bug? &nbsp; Please
+  <a
+    href="http://dux.soton.ac.uk/faculty-readiness-dashboard/report-a-bug.html"
+    >report it on the bug report
+  </a>
+  page.
+</p>
     </footer>`;
     htmlReport += ' </body></html>';
   fs.writeFileSync(REPORTS_DATA_FOLDER + 'staff-profile/faculty-progress/html/staff-profile-faculty-progress.html', htmlReport);
@@ -1619,18 +1637,23 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
   htmlReport += '<hr>';
   htmlReport += '</section>';
   htmlReport += `<footer id="mainfooter">
-      <p>
-        Please use the weekly delivery clinics (Wednesday, 10:15am) with the
-        DUX, ADOFOS and FOS teams for assistance with this dashboard.
-      </p>
-      <p>
-        Contact
-        <a
-          href="mailto:paul.thwaite@soton.ac.uk?subject=Please invite me to a delivery clinic"
-          >Paul Thwaite</a
-        >
-        to attend a future clinic.
-      </p>
+  <p>
+  Use the weekly delivery clinics (Wednesday, 10:15) with DUX, ADOFOS and
+  FOS teams for help with the dashboard. &nbsp;Contact
+  <a
+    href="mailto:paul.thwaite@soton.ac.uk?subject=Please invite me to a delivery clinic"
+    >Paul Thwaite</a
+  >
+  to attend a clinic.
+</p>
+<p>
+  Found a bug? &nbsp; Please
+  <a
+    href="http://dux.soton.ac.uk/faculty-readiness-dashboard/report-a-bug.html"
+    >report it on the bug report
+  </a>
+  page.
+</p>
     </footer>`
   htmlReport += '</body></html>';
   var facultyText = faculty.replace(/\s/g, "-");
@@ -1926,6 +1949,7 @@ function modifyColumns(profile, faculty) {
 
   //add html link to staff profile
   var newPersonURL = '<a href="' + personURL + '" target="_blank"> ' + personNameValue + '</a';
+  //var newPersonURL = '<a href="' + personURL + '" ' + personNameValue + '</a';
 
   //create special array with subset of columns
   profileArray = [];
@@ -1956,7 +1980,11 @@ function setupHTMLReport(faculty) {
       <title>Digital UX Team - Staff Profile Dashboard</title>
       <!--Chart.js JS CDN-->
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-      <link rel="stylesheet" type="text/css" href="../../../../../css/dux-dashboard.css" />`;
+      <link rel="stylesheet" type="text/css" href="../../../../../css/dux-dashboard.css" />
+      <link
+      rel="icon"
+      href="http://dux.soton.ac.uk/drupal-reports/favicon/favicon.ico"
+    />`;
 
   if (faculty == 'Faculty not set') {
 
@@ -1966,11 +1994,11 @@ function setupHTMLReport(faculty) {
     htmlReport += '<div id="reportdate">Updated on ' + today + '</div>';
     htmlReport += '<hr>';
     htmlReport += '<h2>How to use this report</h2>';
-    htmlReport += '<div>The new staff profile is driven by data from source systems  <a href="https://subscribe.soton.ac.uk"  target="_blank" > Subscribe</a> and <a href="https://pure.soton.ac.uk/admin/login.xhtml"  target="_blank" > Pure</a>.  Members of staff update these source systems and their updates automatically pull through on to their staff profile within 24 hours.</div>';
+    htmlReport += '<div>The new staff profile is driven by data from source systems  <a href="https://subscribe.soton.ac.uk" > Subscribe</a> and <a href="https://pure.soton.ac.uk/admin/login.xhtml"  > Pure</a>.  Members of staff update these source systems and their updates automatically pull through on to their staff profile within 24 hours.</div>';
     //htmlReport += '<br>';
     htmlReport += '<div>A staff profile contains 25 data fields. The dashboard identifies members of staff who have a staff profile and do not align with a faculty and school (in HR and Pure systems).</div>';
     //htmlReport += '<br>';
-    htmlReport += '<div>The dashboard contains members of staff whose <a href="https://subscribe.soton.ac.uk"  target="_blank" > Subscribe</a> profile has been made public.  If members of staff are missing, guide them to the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance#how-to-create-your-new-profile"  target="_blank" > how to create your new profile</a> instructions on the staff profile guidance Sharepoint site.</div>';
+    htmlReport += '<div>The dashboard contains members of staff whose <a href="https://subscribe.soton.ac.uk" > Subscribe</a> profile has been made public.  If members of staff are missing, guide them to the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance#how-to-create-your-new-profile"  > how to create your new profile</a> instructions on the staff profile guidance Sharepoint site.</div>';
     //htmlReport += '<br>';
     htmlReport += '<div>Use the dashboard to identify missing people from your main faculty dashboard and to work with them to update their staff profile. </div>';
     //htmlReport += '<br>';
@@ -1978,8 +2006,17 @@ function setupHTMLReport(faculty) {
     htmlReport += '<ul>';
     htmlReport += '<li>Some data fields will not apply to all members of staff. For example, Twitter is an optional addition to a staff profile. ';
     htmlReport += '<li>The members of staff listed in this dashboard do not have a faculty and school defined in their HR and Pure data.';
-    htmlReport += '<li>Refer staff members to the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/add-content-staff-profile-first-time.aspx"  target="_blank" > staff profile guidance</a> Sharepoint site for information on how to update their profile.';
-    htmlReport += '<li>User feedback is documented in the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/known-problems-with-staff-profiles.aspx"  target="_blank" >known problems with staff profiles</a> section of the Sharepoint site.';
+    htmlReport += '<li>Refer staff members to the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/add-content-staff-profile-first-time.aspx"   > staff profile guidance</a> Sharepoint site for information on how to update their profile.';
+    htmlReport += '<li>User feedback is documented in the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/known-problems-with-staff-profiles.aspx"   >known problems with staff profiles</a> section of the Sharepoint site.';
+    htmlReport += '<li>The dashboard data is updated every day at around 14:00.';
+    htmlReport += '</ul>';
+    htmlReport += '<div>Report a bug:</div>';
+    htmlReport += '<ul>';
+    htmlReport += '<li>Review <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/known-problems-with-staff-profiles.aspx">known problems with staff profiles</a> before reporting a bug in case it has already been raised.';
+    htmlReport += '<li>Please see the <a href="http://dux.soton.ac.uk/faculty-readiness-dashboard/report-a-bug.html"> bug reporting</a> page.';
+    htmlReport += '</ul>';
+
+    
 
     //htmlReport += '<li>The <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance"  target="_blank" > staff profile guidance</a> Sharepoint site provides help and assitance needed for staff members to update their staff profile page.';
     //htmlReport += '<li>The dashboard will be updated regularly.';
@@ -2000,11 +2037,11 @@ function setupHTMLReport(faculty) {
     htmlReport += '<div id="reportdate">Updated on ' + today + '</div>';
     htmlReport += '<hr>';
     htmlReport += '<h2>How to use this dashboard</h2>';
-    htmlReport += '<div>The new staff profile is driven by data from source systems  <a href="https://subscribe.soton.ac.uk"  target="_blank" > Subscribe</a> and <a href="https://pure.soton.ac.uk/admin/login.xhtml"  target="_blank" > Pure</a>.  Members of staff update these source systems and their updates automatically pull through on to their staff profile within 24 hours.  </div>';
+    htmlReport += '<div>The new staff profile is driven by data from source systems  <a href="https://subscribe.soton.ac.uk"  > Subscribe</a> and <a href="https://pure.soton.ac.uk/admin/login.xhtml"  > Pure</a>.  Members of staff update these source systems and their updates automatically pull through on to their staff profile within 24 hours.  </div>';
     //htmlReport += '<br>';
     htmlReport += '<div>A staff profile contains 25 data fields. The dashboard identifies which data fields contain information for each member of staff in your faculty. The dashboard is broken down by school. </div>';
     //htmlReport += '<br>';
-    htmlReport += '<div>The dashboard contains members of staff whose <a href="https://subscribe.soton.ac.uk"  target="_blank" > Subscribe</a> profile has been made public.  If members of staff are missing, guide them to the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance#how-to-create-your-new-profile"  target="_blank" > how to create your new profile</a> instructions on the staff profile guidance Sharepoint site.</div>';
+    htmlReport += '<div>The dashboard contains members of staff whose <a href="https://subscribe.soton.ac.uk">  Subscribe</a> profile has been made public.  If members of staff are missing, guide them to the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance#how-to-create-your-new-profile"> how to create your new profile</a> instructions on the staff profile guidance Sharepoint site.</div>';
     //htmlReport += '<br>';
     htmlReport += '<div>Use the dashboard to understand your faculty\'s readiness and to work with faculty staff to update their staff profile. </div>';
     //htmlReport += '<br>';
@@ -2012,11 +2049,18 @@ function setupHTMLReport(faculty) {
     htmlReport += '<ul>';
     htmlReport += '<li>Some data fields will not apply to all members of staff. For example, Twitter is an optional addition to a staff profile. ';
     htmlReport += '<li>The faculty and school assignment is based on data provided by Pure and HR.  It is not possible to change these assignments.';
-    htmlReport += '<li>Refer staff members to the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/add-content-staff-profile-first-time.aspx"  target="_blank" > staff profile guidance</a> Sharepoint site for information on how to update their profile.';
-    htmlReport += '<li>User feedback is documented in the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/known-problems-with-staff-profiles.aspx"  target="_blank" >known problems with staff profiles</a> section of the Sharepoint site.';
+    htmlReport += '<li>Refer staff members to the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/add-content-staff-profile-first-time.aspx"> staff profile guidance</a> Sharepoint site for information on how to update their profile.';
+    htmlReport += '<li>User feedback is documented in the <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/known-problems-with-staff-profiles.aspx">known problems with staff profiles</a> section of the Sharepoint site.';
+    htmlReport += '<li>The dashboard data is updated every day at around 14:00.';
+    htmlReport += '</ul>';
+    htmlReport += '<div>Report a bug:</div>';
+    htmlReport += '<ul>';
+    htmlReport += '<li>Review <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/known-problems-with-staff-profiles.aspx" >known problems with staff profiles</a> before reporting a bug in case it has already been raised.';
+    htmlReport += '<li>Please see the <a href="http://dux.soton.ac.uk/faculty-readiness-dashboard/report-a-bug.html"> bug reporting</a> page.';
+    htmlReport += '</ul>';
     //htmlReport += '<li>The <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance"  target="_blank" > staff profile guidance</a> Sharepoint site provides help and assitance needed for staff members to update their staff profile page.';
     //htmlReport += '<li>The dashboard will be updated regularly.';
-    htmlReport += '</ul>';
+    
     htmlReport += '<hr>';
     htmlReport += '<h2>Summary of faculty progress</h2>';
     htmlReport += '<div>The chart shows your faculty\'s current staff profile readiness.  It shows staff profile field usage across all staff profiles in your faculty. </div>';
