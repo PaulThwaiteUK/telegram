@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/dux-dashboard.css" />
+    <link
+      rel="icon"
+      href="http://dux.soton.ac.uk/drupal-reports/favicon/favicon.ico"
+    />
+  </head>
+
+  <body>
+    <script
+      type="text/javascript"
+      src="https://oneweb-soton.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-9zew5j/b/7/c95134bc67d3a521bb3f4331beb9b804/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-GB&collectorId=b1da614e"
+    ></script>
+
+    <script type="text/javascript">
+      window.ATL_JQ_PAGE_PROPS = {
+        triggerFunction: function (showCollectorDialog) {
+          //Requires that jQuery is available!
+          jQuery("#feedback-button").click(function (e) {
+            e.preventDefault();
+            showCollectorDialog();
+          });
+        },
+      };
+    </script>
+
+    <header id="mainheader">
+      <div class="container">
+        <h1>Digital UX Team - Bug Reporting</h1>
+      </div>
+    </header>
+
+    <section class="mainsection">
+      <h2>Report a bug</h2>
+      <div>
+        The Digital User Experience (DUX) team is building a suite of new
+        digital products.
+      </div>
+      <div>
+        The following products are being tested by university staff in a private
+        beta.
+      </div>
+      <ul>
+        <li>Staff profile</li>
+        <li>Research project (on a staff profile)</li>
+      </ul>
+      <div id="callout">
+        Review
+        <a
+          href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/known-problems-with-staff-profiles.aspx"
+          target="_blank"
+          >known problems with staff profiles</a
+        >
+        before reporting a bug in case it has already been raised.
+      </div>
+      <div>
+        Click the 'Report a bug' button to reveal a pop-up form. Complete all
+        sections of the form
+        <strong>including your name and email address</strong>.
+      </div>
+      <div>Please report one bug at a time.</div>
+
+      <section id="bug-collector">
+        <a href="#" id="feedback-button">Report a bug</a>
+      </section>
+
+      <h2>What to expect after you report a bug</h2>
+
+      <div>Once we have recieved your bug report:</div>
+
+      <ul>
+        <li>
+          Bugs will be assessed by our team. Once they have been confirmed, they
+          will be added to the
+          <a
+            href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/known-problems-with-staff-profiles.aspx"
+            target="_blank"
+            >known problems with staff profiles</a
+          >
+          section of the
+          <a
+            href="https://sotonac.sharepoint.com/teams/staff-profile-guidance"
+            target="_blank"
+          >
+            staff profile guidance</a
+          >
+          Sharepoint site.
+        </li>
+
+        <li>Bugs will be fixed in priority order decided by our team.</li>
+        <li>We will endeavour to notify you when your bug has been fixed.</li>
+      </ul>
+    </section>
+    <footer id="mainfooter">
+      <p>
+        Use the weekly delivery clinics (Wednesday, 10:15) with DUX, ADOFOS and
+        FOS teams for help with the dashboard. &nbsp;Contact
+        <a
+          href="mailto:paul.thwaite@soton.ac.uk?subject=Please invite me to a delivery clinic"
+          >Paul Thwaite</a
+        >
+        to attend a clinic.
+      </p>
+      <p>
+        Found a bug? &nbsp; Please
+        <a
+          href="http://dux.soton.ac.uk/faculty-readiness-dashboard/report-a-bug.html"
+          >report it on the bug report
+        </a>
+        page.
+      </p>
+    </footer>
+  </body>
+</html>
