@@ -205,10 +205,10 @@ async function generateReport(urllimit, domain, debug) {
                     console.log('--> closed browser');
                     //browser = await puppeteer.launch();
                     browser = await puppeteer.launch({
-                      timeout: 120000,
-                      headless: true,
-                      args: ['--no-sandbox']
-                  });
+                        timeout: 120000,
+                        headless: true,
+                        args: ['--no-sandbox']
+                    });
                     console.log('--> launched new browser');
                     page = await browser.newPage();
                     console.log('--> launched new page');
@@ -216,7 +216,7 @@ async function generateReport(urllimit, domain, debug) {
                     await page.goto('https://oneweb.soton.ac.uk');
                     console.log('--> loaded test page, ready to carry on');
                     refreshPageInstanceCount = 0;
-                  }
+                }
 
                 var timeBefore = new Date();
                 await page.goto(personURL);
@@ -403,12 +403,17 @@ async function generateReport(urllimit, domain, debug) {
                 console.log(error);
             }
 
+            try {
+                var personTeachingQuantity = 0;
+                if ((personTeachingModules >= 0) && (personTeachingCode >= 0)) {
 
-            var personTeachingQuantity = 0;
-            if ((personTeachingModules >= 0) && (personTeachingCode >= 0)) {
-
-                personTeachingQuantity = await page.evaluate(() => Array.from(document.querySelector(' #teaching > section > table > tbody').children).length);
+                    personTeachingQuantity = await page.evaluate(() => Array.from(document.querySelector(' #teaching > section > table > tbody').children).length);
+                }
+            } catch (error) {
+                console.log(personURL + ' has weird content!');
             }
+
+
 
             personTeachingIntro = await page.evaluate(() => Array.from(document.querySelectorAll('#teaching > section > p'), element => element.textContent));
 

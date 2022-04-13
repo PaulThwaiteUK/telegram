@@ -1,8 +1,6 @@
 
 exports.generateTable = function (data, tableid) {
 
-
-
     if (tableid != undefined) {
         var html = '<table id="' + tableid + '" border="1" cellpadding="6" cellspacing="5" style="border-collapse:collapse;">';
     } else {
@@ -27,16 +25,10 @@ exports.generateTable = function (data, tableid) {
     }
 
     if (data[0].constructor === Array) {
-
-        var start = 0;
-
         var count = 0;
         var rowCount = 0;
-
+        
         for (var row in data) {
-            if (start == 0) {
-                html += '<thead>\r\n';
-            }
             var width;
             html += '<tr>\r\n';
             for (var item in data[row]) {
@@ -90,7 +82,7 @@ exports.generateTable = function (data, tableid) {
 
                 //bold the first row as the table header
                 if (count == 0) {
-                    html += '<th style="text-align:' + style + ';' + width + '; background-color:' + colour + ';"><b>' + data[row][item] + '</b></th>\r\n';
+                    html += '<td style="text-align:' + style + ';' + width + '; background-color:' + colour + ';"><b>' + data[row][item] + '</b></td>\r\n';
                 }
                 else {
                     html += '<td style="text-align:' + style + ';' + width + '; background-color:' + colour + ';">' + data[row][item] + '</td>\r\n';
@@ -99,19 +91,12 @@ exports.generateTable = function (data, tableid) {
             }
             count++;
             html += '</tr>\r\n';
-
-            if (start == 0) {
-                html += '</thead>\r\n';
-                start++;
-            }
         }
-
-
     }
 
     if (data[0].constructor === Object) {
         for (var row in data) {
-            html += '<tr >\r\n';
+            html += '<tr>\r\n';
             for (var item in data[row]) {
                 if (data[row][item].indexOf('http') != -1) {
                     var theURL = data[item];

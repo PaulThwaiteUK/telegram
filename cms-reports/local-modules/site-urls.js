@@ -8,7 +8,7 @@ exports.getCoursePageURLs = function (domain) {
 
     //set an array for the urls
     var urlsList = [];
-   
+
     //get the domain URL from pre-defined URLs
     var domainURL = drupalDomains.getDomain(domain);
 
@@ -44,7 +44,7 @@ exports.getStaffProfileURLs = function (domain) {
 
     //set an array for the urls
     var urlsList = [];
-   
+
     //get the domain URL from pre-defined URLs
     var domainURL = drupalDomains.getDomain(domain);
 
@@ -77,7 +77,7 @@ exports.getStaffProfileURLsBackuo = function (domain) {
 
     //set an array for the urls
     var urlsList = [];
-   
+
     //get the domain URL from pre-defined URLs
     var domainURL = drupalDomains.getDomain(domain);
 
@@ -106,7 +106,7 @@ exports.getResearchProjectURLs = function (domain) {
 
     //set an array for the urls
     var urlsList = [];
-   
+
     //get the domain URL from pre-defined URLs
     var domainURL = drupalDomains.getDomain(domain);
 
@@ -118,12 +118,15 @@ exports.getResearchProjectURLs = function (domain) {
     var jsonLine = JSON.parse(jsonURLs);
 
     //create an array of urls
-    jsonLine.forEach(URL => {
+    jsonLine.forEach(profile => {
 
-        URL[0] = domainURL + URL[0];
+        projectTitle = profile[0];
+        projectURL = domainURL + profile[1];
+        projectFaculty = profile[2];
+        projectSchool = profile[3];
 
         //console.log(URL[0])
-        urlsList.push([URL[0]])
+        urlsList.push([projectURL, projectTitle, projectFaculty, projectSchool])
     });
 
     return urlsList;
@@ -135,7 +138,7 @@ exports.getFullRegressionTestURLs = function (domain) {
 
     //set an array for the urls
     var urlsList = [];
-   
+
     //get the domain URL from pre-defined URLs
     var domainURL = drupalDomains.getDomain(domain);
 

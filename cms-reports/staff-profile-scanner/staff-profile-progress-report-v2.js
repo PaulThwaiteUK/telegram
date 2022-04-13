@@ -655,7 +655,7 @@ function createOverallProgressReport(domain) {
   let launchDataYes = '264,3153,1863,1929,12,3153,1520,276,14,1100,16,17,1,37,0,12,316,571,1936,0,111,110,340,53,219,0,0,0';  //removed supervision previous '0' 6th from 219
 
 
-  LABELS = "['Photo', 'Name', 'Title', 'Research interests', 'Accepting PhD students', 'Email', 'Telephone', 'Address', 'Google scholar', 'ORCID', 'LinkedIn', 'Twitter', 'About', 'Research groups', 'Research interests', 'Current research', 'Research projects active', 'Research projects completed', 'Publications', 'Supervision current', 'Teaching intro', 'Teaching modules', 'Roles', 'Biography', 'Prizes']";
+  LABELS = "['Photo', 'Name', 'Title', 'Research interests', 'Accepting PhD students', 'Email', 'Telephone', 'Address', 'Google scholar', 'ORCID', 'LinkedIn', 'Twitter', 'About', 'Research groups', 'Research interests', 'Current research', 'Research projects active', 'Research projects completed', 'Publications', 'Supervision current', 'Teaching interests', 'Teaching modules', 'Roles', 'Biography', 'Prizes']";
 
 
 
@@ -828,10 +828,6 @@ function createStaffProfileFacultyReport() {
   const FACULTY_NOT_DEFINED = 'Faculty not set';
   const SCHOOL_NOT_DEFINED = 'School not set';
 
-
-  const FACULTY = [ART_FACULTY, ENG_FACULTY, ENV_FACULTY, MED_FACULTY, SOC_FACULTY, PS_FACULTY, NO_FACULTY];
-  const SCHOOL = ['School 1', 'School 2', 'School 3', 'School 4', 'School 5', 'School 6', 'School 7', 'School 8', 'School 9', 'School 10', 'School 11', 'School 12'];
-  const DEPARTMENT = ['Department A', 'Department B', 'Department C', 'Department D', 'Department E', 'Department F', 'Department G', 'Department H', 'Department I', 'Department J', 'Department K', 'Department L'];
 
   //const STAFF_DATA = REPORTS_DATA_FOLDER + 'staff-profile/field-progress/csv/staff-profile-field-index-20220106.csv';
   const STAFF_DATA = STAFF_PROFILE_DATA_LATEST;
@@ -1052,10 +1048,10 @@ function createStaffProfileFacultyReport() {
 
     }
 
-      //save school in on array
-      allSchools.push(school);
+    //save school in on array
+    allSchools.push(school);
 
-    })
+  })
 
   //remove duplicates
   artsSchool = [...new Set(artsSchool)];
@@ -1167,9 +1163,9 @@ function createStaffProfileProgressIndexPage(facultyReportData, facultyCount, st
 
 
 
-  console.log('****' + facultyReportData['Faculty of Arts and Humanities']['Faculty Central (Arts and Humanities)']);
+  //console.log('****' + facultyReportData['Faculty of Arts and Humanities']['Faculty Central (Arts and Humanities)']);
 
-  console.log('####' + facultyReportData['Faculty of Arts and Humanities']['Winchester School of Art']);
+  //console.log('####' + facultyReportData['Faculty of Arts and Humanities']['Winchester School of Art']);
 
   console.log('---');
   console.log(faculties[0]);
@@ -1179,7 +1175,7 @@ function createStaffProfileProgressIndexPage(facultyReportData, facultyCount, st
   var faculty = ENV_FACULTY;
 
   var theSchool = schools[faculty];
-  
+
 
   /*
   //calculate faculty field score
@@ -1451,7 +1447,7 @@ function createStaffProfileProgressIndexPage(facultyReportData, facultyCount, st
   page.
 </p>
     </footer>`;
-    htmlReport += ' </body></html>';
+  htmlReport += ' </body></html>';
   fs.writeFileSync(REPORTS_DATA_FOLDER + 'staff-profile/faculty-progress/html/staff-profile-faculty-progress.html', htmlReport);
 
   return htmlReport;
@@ -1535,7 +1531,7 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
   htmlReport += '<div id="jumptotop"</div>';
   htmlReport += '<section class="staff-profile-faculty-section">';
   htmlReport += 'Jump to school : ';
-  
+
   var numberSchools = schools.length;
   var position = 0;
   schools.forEach(school => {
@@ -1580,7 +1576,7 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
       var data = facultyReportData[faculty][school];
       var profileData = [];
 
-      profileData.push(['Staff member name', 'Fields with data', 'Photo', 'Name', 'Title', 'Research interests', 'Accepting PhD students', 'Email', 'Telephone', 'Address', 'Google scholar', 'ORCID', 'LinkedIn', 'Twitter', 'About', 'Research groups', 'Research interests', 'Current research', 'Research projects active', 'Research projects completed', 'Publications', 'Supervision current', 'Teaching intro', 'Teaching modules', 'Roles', 'Biography', 'Prizes', 'Person email']);
+      profileData.push(['Staff member name', 'Person title', 'Send email', 'Fields with data', 'Photo', 'Name', 'Title', 'Research interests', 'Accepting PhD students', 'Email', 'Telephone', 'Address', 'Google scholar', 'ORCID', 'LinkedIn', 'Twitter', 'About', 'Research groups', 'Research interests', 'Current research', 'Research projects active', 'Research projects completed', 'Publications', 'Supervision current', 'Teaching interests', 'Teaching modules', 'Roles', 'Biography', 'Prizes', 'Person email']);
 
       data.forEach(element => {
 
@@ -1661,6 +1657,7 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
 }
 
 
+
 function createFacultyBarChart(staffProfileDataWithFaculties, faculty) {
 
   var facultyDataCountYes = [];
@@ -1672,29 +1669,30 @@ function createFacultyBarChart(staffProfileDataWithFaculties, faculty) {
   for (let row = 0; row < TOTAL_DATA_COUNT; row++) {
     const theRow = staffProfileDataWithFaculties[row][0];
 
-    for (let column = 2; column < 29; column++) {
+    for (let column = 4; column < 31; column++) {
 
       const theColumn = theRow[column];
 
-      if (facultyDataCountYes[column - 2] == undefined) {
-        facultyDataCountYes[column - 2] = 0;
+      if (facultyDataCountYes[column - 4] == undefined) {
+        facultyDataCountYes[column - 4] = 0;
       }
 
-      if (facultyDataCountNo[column - 2] == undefined) {
-        facultyDataCountNo[column - 2] = 0;
+      if (facultyDataCountNo[column - 4] == undefined) {
+        facultyDataCountNo[column - 4] = 0;
       }
 
       if (theColumn == 'YES') {
 
-        facultyDataCountYes[column - 2]++;
+        facultyDataCountYes[column - 4]++;
       }
 
       if (theColumn == 'NO') {
 
-        facultyDataCountNo[column - 2]++;
+        facultyDataCountNo[column - 3]++;
       }
     };
   };
+
 
 
   //generate percentages
@@ -1718,7 +1716,7 @@ function createFacultyBarChart(staffProfileDataWithFaculties, faculty) {
   console.log(facultyDataCountNoPercent);
 
   //const LABELS = "['Photo', 'Name', 'Title', 'Research interests', 'Accepting PhD students', 'Email', 'Telephone', 'Address', 'Google scholar', 'ORCID', 'LinkedIn', 'Twitter', 'About', 'Research groups', 'Research interests', 'Current research', 'Research projects active', 'Research projects completed', 'Publications', 'Supervision current', 'Teaching intro', 'Teaching modules', 'Roles', 'Biography', 'Prizes']";
-  const LABELS = "['Photo', 'Name', 'Title', 'Research interests', 'Accepting PhD students', 'Email', 'Telephone', 'Address', 'Google scholar', 'ORCID', 'LinkedIn', 'Twitter', 'About', 'Research groups', 'Research interests', 'Current research', 'Research projects active', 'Research projects completed', 'Publications', 'Supervision current', 'Teaching intro', 'Teaching modules', 'Roles', 'Biography', 'Prizes']";
+  const LABELS = "['Photo', 'Name', 'Title', 'Research interests', 'Accepting PhD students', 'Email', 'Telephone', 'Address', 'Google scholar', 'ORCID', 'LinkedIn', 'Twitter', 'About', 'Research groups', 'Research interests', 'Current research', 'Research projects active', 'Research projects completed', 'Publications', 'Supervision current', 'Teaching interests', 'Teaching modules', 'Roles', 'Biography', 'Prizes']";
 
 
   const TITLE = "STAFF PROFILE PROGRESS FOR " + faculty.toUpperCase() + ' - ' + TOTAL_DATA_COUNT + ' PROFILES';
@@ -1815,7 +1813,7 @@ function createFacultyBarChart(staffProfileDataWithFaculties, faculty) {
       orange: 'rgb(255, 159, 64)',
       yellow: 'rgb(255, 205, 86)',
       green: 'rgb(75, 192, 192)',
-      blue: 'rgb(54, 162, 235)',
+      blue: 'rgb(0, 83, 179)',
       purple: 'rgb(153, 102, 255)',
       grey: 'rgb(201, 203, 207)'
     };
@@ -1828,7 +1826,7 @@ function createFacultyBarChart(staffProfileDataWithFaculties, faculty) {
         {
           label: 'Fields completed',
           data: [${facultyDataCountYesPercent}],
-          backgroundColor: CHART_COLORS.red,
+          backgroundColor: CHART_COLORS.blue,
         }
         //{
         //  label: 'DATA FIELD EMPTY',
@@ -1942,22 +1940,179 @@ function modifyColumns(profile, faculty) {
   var personRoles = profile[25];
   var personBiography = profile[26];
   var personPrizes = profile[27];
+  var personTitleValue = profile[31];
   var personEmailValue = profile[32];
   var personFaculty = profile[33];
   var personSchool = profile[34];
   var personDepartmentSchool = profile[35];
 
+  //determine empty fields
+  var fieldsMissingData;
+  var heroFields = [];
+  var freetextFields = [];
+  var showcaseFields = [];
+  var numberEmptyFields = 0;
+
+  heroFields.push('These fields help people contact you:');
+
+  if (personPhoto == 'NO') {
+    heroFields.push('- Photo');
+    numberEmptyFields++;
+  }
+
+  if (personTitle == 'NO') {
+    heroFields.push('- Title');
+    numberEmptyFields++;
+  }
+
+  if (personPhDStudents == 'NO') {
+    heroFields.push('- Accepting PhD students');
+    numberEmptyFields++;
+  }
+
+  if (personTelephone == 'NO') {
+    heroFields.push('- Telephone number');
+    numberEmptyFields++;
+  }
+
+  if (personAddress == 'NO') {
+    heroFields.push('- Address');
+    numberEmptyFields++;
+  }
+
+  if (personGoogleScholar == 'NO') {
+    heroFields.push('- Google scholar');
+    numberEmptyFields++;
+  }
+
+  if (personORCID == 'NO') {
+    heroFields.push('- ORCID');
+    numberEmptyFields++;
+  }
+
+  if (personLinkedIn == 'NO') {
+    heroFields.push('- LinkedIn');
+    numberEmptyFields++;
+  }
+
+  if (personTwitter == 'NO') {
+    heroFields.push('- Twitter');
+    numberEmptyFields++;
+  }
+
+  freetextFields.push('These fields help people understand more about you:');
+
+  if (personAbout == 'NO') {
+    freetextFields.push('- About');
+    numberEmptyFields++;
+  }
+  if (personResearchInterests == 'NO') {
+    freetextFields.push('- Research interests');
+    numberEmptyFields++;
+  }
+  if (personResearchCurrent == 'NO') {
+    freetextFields.push('- Current research');
+    numberEmptyFields++;
+  }
+  if (personTeachingIntro == 'NO') {
+    freetextFields.push('- Teaching interests');
+    numberEmptyFields++;
+  }
+  if (personBiography == 'NO') {
+    freetextFields.push('- Biography');
+    numberEmptyFields++;
+  }
+
+  showcaseFields.push('These fields help you showcase your achievements:');
+
+  if (personResearchGroups == 'NO') {
+    showcaseFields.push('- Research groups');
+    numberEmptyFields++;
+  }
+  if (personResearchProjectsActive == 'NO') {
+    showcaseFields.push('- Research projects active');
+    numberEmptyFields++;
+  }
+  if (personResearchProjectsCompleted == 'NO') {
+    showcaseFields.push('- Research projects completed');
+    numberEmptyFields++;
+  }
+  if (personPublications == 'NO') {
+    showcaseFields.push('- Publications');
+    numberEmptyFields++;
+  }
+  if (personSupervisionCurrent == 'NO') {
+    showcaseFields.push('- Supervision current');
+    numberEmptyFields++;
+  }
+  if (personTeachingModules == 'NO') {
+    showcaseFields.push('- Teaching modules');
+    numberEmptyFields++;
+  }
+  if (personRoles == 'NO') {
+    showcaseFields.push('- Roles and responsibilities');
+    numberEmptyFields++;
+  }
+  if (personPrizes == 'NO') {
+    showcaseFields.push('- Prizes');
+    numberEmptyFields++;
+  }
+
+  var heroFieldsString = heroFields.join('%0D%0A');
+  var freetextFieldsString = freetextFields.join('%0D%0A');
+  var showcaseFieldsString = showcaseFields.join('%0D%0A');
+
+  var emailBody = [];
+  // emailBody.push('Hello ' + personNameValue + ',');
+  // emailBody.push('%0D%0A%0D%0AHave you seen your new staff profile? %0D%0A%0D%0A');
+  // emailBody.push('%0D%0A%0D%0AThe profile works best when all the data fields are completed.  I list below the data fields on your profile which are empty.%0D%0A%0D%0A');
+  // emailBody.push(heroFieldsString);
+  // emailBody.push('%0D%0A%0D%0AThank you.');
+  // emailBody.push('%0D%0A');
+
+  emailBody += ('Hello ' + personNameValue + ',');
+  emailBody += ('%0D%0A%0D%0AHave you seen your new staff profile? ');
+  emailBody += ('%0D%0A%0D%0A' + personURL);
+  emailBody += ('%0D%0A%0D%0AYour profile works best if you complete all sections.  Each section is made up of a number of data fields. Some fields won\'t apply to you, it\'s okay to leave those empty.');
+  emailBody += ('%0D%0A%0D%0AYour profile currently has ' + numberEmptyFields + ' empty fields.');
+
+  if (heroFields.length > 1) {
+    emailBody += ('%0D%0A%0D%0A' + heroFieldsString);
+  }
+  if (freetextFields.length > 1) {
+    emailBody += ('%0D%0A%0D%0A' + freetextFieldsString);
+  }
+  if (showcaseFields.length > 1) {
+    emailBody += ('%0D%0A%0D%0A' + showcaseFieldsString);
+  }
+
+  emailBody += ('%0D%0A%0D%0AFor help with updating your profile, see the staff profile guidance on Sharepoint.');
+  emailBody += ('%0D%0A%0D%0Ahttps://sotonac.sharepoint.com/teams/staff-profile-guidance');
+  emailBody += ('%0D%0A%0D%0AThank you.');
+  emailBody += ('%0D%0A');
+
+  //var emailBodyString = emailBody.join('%0D%0A');
+
+  //url encode the body
+  //emailBodyString.replace(/\s/g, '%20')
+
   //add html link to staff profile
   var newPersonURL = '<a href="' + personURL + '" target="_blank"> ' + personNameValue + '</a';
-  //var newPersonURL = '<a href="' + personURL + '" ' + personNameValue + '</a';
+
+  //add a mail to the mail link
+  var newPersonEmailValue = '<a href="mailto:' + personEmailValue + '?subject=Please update your new staff profile&body=' + emailBody + '">' + personEmailValue + '</a>';
+
+  var envelopeICON = '<i class="fa fa-envelope" style="font-size:36px;;color:red;"></i>';
+
+  var envelopeICON = '<a href="mailto:' + personEmailValue + '?subject=Please update your new staff profile&body=' + emailBody + '"> <i class="fa fa-envelope" style="font-size:24px;color:#4863A0;"></i></a>';
 
   //create special array with subset of columns
   profileArray = [];
 
   if (faculty == 'Faculty not set') {
-    profileArray.push(newPersonURL, personDataCount.toString(), personPhoto, personName, personTitle, personResearchInterestsHero, personPhDStudents, personEmail, personTelephone, personAddress, personGoogleScholar, personORCID, personLinkedIn, personTwitter, personAbout, personResearchGroups, personResearchInterests, personResearchCurrent, personResearchProjectsActive, personResearchProjectsCompleted, personPublications, personSupervisionCurrent, personTeachingIntro, personTeachingModules, personRoles, personBiography, personPrizes, personEmailValue, personFaculty, personSchool, personDepartmentSchool);
+    profileArray.push(newPersonURL, personTitleValue, envelopeICON, personDataCount.toString(), personPhoto, personName, personTitle, personResearchInterestsHero, personPhDStudents, personEmail, personTelephone, personAddress, personGoogleScholar, personORCID, personLinkedIn, personTwitter, personAbout, personResearchGroups, personResearchInterests, personResearchCurrent, personResearchProjectsActive, personResearchProjectsCompleted, personPublications, personSupervisionCurrent, personTeachingIntro, personTeachingModules, personRoles, personBiography, personPrizes, newPersonEmailValue, personFaculty, personSchool, personDepartmentSchool);
   } else {
-    profileArray.push(newPersonURL, personDataCount.toString(), personPhoto, personName, personTitle, personResearchInterestsHero, personPhDStudents, personEmail, personTelephone, personAddress, personGoogleScholar, personORCID, personLinkedIn, personTwitter, personAbout, personResearchGroups, personResearchInterests, personResearchCurrent, personResearchProjectsActive, personResearchProjectsCompleted, personPublications, personSupervisionCurrent, personTeachingIntro, personTeachingModules, personRoles, personBiography, personPrizes, personEmailValue);
+    profileArray.push(newPersonURL, personTitleValue, envelopeICON, personDataCount.toString(), personPhoto, personName, personTitle, personResearchInterestsHero, personPhDStudents, personEmail, personTelephone, personAddress, personGoogleScholar, personORCID, personLinkedIn, personTwitter, personAbout, personResearchGroups, personResearchInterests, personResearchCurrent, personResearchProjectsActive, personResearchProjectsCompleted, personPublications, personSupervisionCurrent, personTeachingIntro, personTeachingModules, personRoles, personBiography, personPrizes, newPersonEmailValue);
   }
 
   return profileArray;
@@ -2016,7 +2171,7 @@ function setupHTMLReport(faculty) {
     htmlReport += '<li>Please see the <a href="http://dux.soton.ac.uk/faculty-readiness-dashboard/report-a-bug.html"> bug reporting</a> page.';
     htmlReport += '</ul>';
 
-    
+
 
     //htmlReport += '<li>The <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance"  target="_blank" > staff profile guidance</a> Sharepoint site provides help and assitance needed for staff members to update their staff profile page.';
     //htmlReport += '<li>The dashboard will be updated regularly.';
@@ -2058,9 +2213,15 @@ function setupHTMLReport(faculty) {
     htmlReport += '<li>Review <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/known-problems-with-staff-profiles.aspx" >known problems with staff profiles</a> before reporting a bug in case it has already been raised.';
     htmlReport += '<li>Please see the <a href="http://dux.soton.ac.uk/faculty-readiness-dashboard/report-a-bug.html"> bug reporting</a> page.';
     htmlReport += '</ul>';
+    htmlReport += '<div>Send an email</div>';
+    htmlReport += '<ul>';
+    htmlReport += '<li>Click <i class="fa fa-envelope" style="font-size:17px;;color:#4863A0;"></i> to generate a personalised email. The email will contain a list of empty fields with links to their profile and the staff profile guidance on Sharepoint.';
+    htmlReport += '<li>The email is loaded into your default email client and can be amended as needed.';
+    htmlReport += '<li>This is an experimental feature and should work for most browsers and environments.';
+    htmlReport += '</ul>';
     //htmlReport += '<li>The <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance"  target="_blank" > staff profile guidance</a> Sharepoint site provides help and assitance needed for staff members to update their staff profile page.';
     //htmlReport += '<li>The dashboard will be updated regularly.';
-    
+
     htmlReport += '<hr>';
     htmlReport += '<h2>Summary of faculty progress</h2>';
     htmlReport += '<div>The chart shows your faculty\'s current staff profile readiness.  It shows staff profile field usage across all staff profiles in your faculty. </div>';

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 html,
 body {
@@ -46,6 +47,14 @@ a {
   padding-bottom: 10px;
 }
 
+.mainsection ul {
+  padding-top: -10px;
+}
+
+.mainsection hr {
+  margin-top: 15px;
+}
+
 #mainfooter22 {
   background: #333;
   color: white;
@@ -91,7 +100,6 @@ a {
 }
 
 table,
-th,
 td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -120,6 +128,32 @@ td:nth-child(1) {
 }
 
 .staff-profile-faculty-section td:nth-child(1) {
+  white-space: nowrap;
+}
+
+.staff-profile-faculty-section td:nth-child(1) {
+  white-space: nowrap;
+  position: sticky;
+  position: -webkit-sticky;
+  left: 0;
+}
+
+table thead th:first-child {
+  position: sticky;
+  position: -webkit-sticky;
+  left: 0;
+  z-index: 9999;
+}
+
+table thead th {
+  position: sticky;
+  position: -webkit-sticky;
+  top: -1;
+  z-index: 20;
+  border-top: -1px solid #808080;
+}
+
+.staff-profile-faculty-section td:nth-child(2) {
   white-space: nowrap;
 }
 
@@ -156,17 +190,17 @@ td:nth-child(1) {
 }
 
 #callout {
-  border-left: 5px solid red;
+  border-left: 5px solid #0053b3;
   padding-left: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
   vertical-align: center;
-  padding-top: 0px;
+  padding-top: 13px;
 }
 
 /* CSS */
 #bug-collector a {
-  background-image: linear-gradient(-180deg, #37aee2 0%, #1e96c8 100%);
+  background-color: #0053b3;
   border-radius: 0.5rem;
   box-sizing: border-box;
   color: #ffffff;
@@ -189,5 +223,5 @@ td:nth-child(1) {
 }
 
 #bug-collector a:hover {
-  background-image: linear-gradient(-180deg, #1d95c9 0%, #17759c 100%);
+  background-color: #003977;
 }

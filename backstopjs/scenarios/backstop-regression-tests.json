@@ -2,7 +2,7 @@
    {
       "label": "article-unsupported-browser",
       "referenceUrl": "https://oneweb.soton.ac.uk/unsupported-browser",
-      "url": "https://oneweb.dev.soton.ac.uk/unsupported-browser",
+      "url": "https://oneweb.soton.ac.uk/unsupported-browser",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -11,12 +11,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "basic-page-sport-wellbeing-terms-conditions-general",
       "referenceUrl": "https://oneweb.soton.ac.uk/sport-wellbeing/terms-conditions/general",
-      "url": "https://oneweb.dev.soton.ac.uk/sport-wellbeing/terms-conditions/general",
+      "url": "https://oneweb.soton.ac.uk/sport-wellbeing/terms-conditions/general",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -25,12 +25,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "basic-page-sport-wellbeing-terms-conditions-jsa",
       "referenceUrl": "https://oneweb.soton.ac.uk/sport-wellbeing/terms-conditions/jsa",
-      "url": "https://oneweb.dev.soton.ac.uk/sport-wellbeing/terms-conditions/jsa",
+      "url": "https://oneweb.soton.ac.uk/sport-wellbeing/terms-conditions/jsa",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -39,12 +39,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "basic-page-student-life-support-money-health-services",
       "referenceUrl": "https://oneweb.soton.ac.uk/student-life/support-money/health-services",
-      "url": "https://oneweb.dev.soton.ac.uk/student-life/support-money/health-services",
+      "url": "https://oneweb.soton.ac.uk/student-life/support-money/health-services",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -53,12 +53,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "basic-page-student-life-support-money-safety",
       "referenceUrl": "https://oneweb.soton.ac.uk/student-life/support-money/safety",
-      "url": "https://oneweb.dev.soton.ac.uk/student-life/support-money/safety",
+      "url": "https://oneweb.soton.ac.uk/student-life/support-money/safety",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -67,12 +67,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "campaign-campaigns-undergraduate-discover",
       "referenceUrl": "https://oneweb.soton.ac.uk/campaigns/undergraduate/discover",
-      "url": "https://oneweb.dev.soton.ac.uk/campaigns/undergraduate/discover",
+      "url": "https://oneweb.soton.ac.uk/campaigns/undergraduate/discover",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -81,12 +81,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "campaign-campaigns-undergraduate-discover-c",
       "referenceUrl": "https://oneweb.soton.ac.uk/campaigns/undergraduate/discover-c",
-      "url": "https://oneweb.dev.soton.ac.uk/campaigns/undergraduate/discover-c",
+      "url": "https://oneweb.soton.ac.uk/campaigns/undergraduate/discover-c",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -95,12 +95,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "campaign-campaigns-undergraduate-discover-option-2",
       "referenceUrl": "https://oneweb.soton.ac.uk/campaigns/undergraduate/discover-option-2",
-      "url": "https://oneweb.dev.soton.ac.uk/campaigns/undergraduate/discover-option-2",
+      "url": "https://oneweb.soton.ac.uk/campaigns/undergraduate/discover-option-2",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -109,12 +109,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "campaign-campaigns-undergraduate-discover-b",
       "referenceUrl": "https://oneweb.soton.ac.uk/campaigns/undergraduate/discover-b",
-      "url": "https://oneweb.dev.soton.ac.uk/campaigns/undergraduate/discover-b",
+      "url": "https://oneweb.soton.ac.uk/campaigns/undergraduate/discover-b",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -123,12 +123,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "campus-student-life-campuses-avenue",
       "referenceUrl": "https://oneweb.soton.ac.uk/student-life/campuses/avenue",
-      "url": "https://oneweb.dev.soton.ac.uk/student-life/campuses/avenue",
+      "url": "https://oneweb.soton.ac.uk/student-life/campuses/avenue",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -137,12 +137,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "campus-student-life-campuses-highfield",
       "referenceUrl": "https://oneweb.soton.ac.uk/student-life/campuses/highfield",
-      "url": "https://oneweb.dev.soton.ac.uk/student-life/campuses/highfield",
+      "url": "https://oneweb.soton.ac.uk/student-life/campuses/highfield",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -151,12 +151,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "campus-working-with-us-campuses-waterfront",
       "referenceUrl": "https://oneweb.soton.ac.uk/working-with-us/campuses/waterfront",
-      "url": "https://oneweb.dev.soton.ac.uk/working-with-us/campuses/waterfront",
+      "url": "https://oneweb.soton.ac.uk/working-with-us/campuses/waterfront",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -165,12 +165,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "campus-student-life-campuses-general-hospital",
       "referenceUrl": "https://oneweb.soton.ac.uk/student-life/campuses/general-hospital",
-      "url": "https://oneweb.dev.soton.ac.uk/student-life/campuses/general-hospital",
+      "url": "https://oneweb.soton.ac.uk/student-life/campuses/general-hospital",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -179,12 +179,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "city-working-with-us-cities-winchester",
       "referenceUrl": "https://oneweb.soton.ac.uk/working-with-us/cities/winchester",
-      "url": "https://oneweb.dev.soton.ac.uk/working-with-us/cities/winchester",
+      "url": "https://oneweb.soton.ac.uk/working-with-us/cities/winchester",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -193,12 +193,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "city-working-with-us-cities-southampton",
       "referenceUrl": "https://oneweb.soton.ac.uk/working-with-us/cities/southampton",
-      "url": "https://oneweb.dev.soton.ac.uk/working-with-us/cities/southampton",
+      "url": "https://oneweb.soton.ac.uk/working-with-us/cities/southampton",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -207,12 +207,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "city-student-life-cities-winchester",
       "referenceUrl": "https://oneweb.soton.ac.uk/student-life/cities/winchester",
-      "url": "https://oneweb.dev.soton.ac.uk/student-life/cities/winchester",
+      "url": "https://oneweb.soton.ac.uk/student-life/cities/winchester",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -221,12 +221,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "city-student-life-cities-southampton",
       "referenceUrl": "https://oneweb.soton.ac.uk/student-life/cities/southampton",
-      "url": "https://oneweb.dev.soton.ac.uk/student-life/cities/southampton",
+      "url": "https://oneweb.soton.ac.uk/student-life/cities/southampton",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -235,12 +235,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "edu-facility-node-173746",
       "referenceUrl": "https://oneweb.soton.ac.uk/node/173746",
-      "url": "https://oneweb.dev.soton.ac.uk/node/173746",
+      "url": "https://oneweb.soton.ac.uk/node/173746",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -249,12 +249,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "edu-facility-study-facilities-imaging-microscopy-facilities",
       "referenceUrl": "https://oneweb.soton.ac.uk/study/facilities/imaging-microscopy-facilities",
-      "url": "https://oneweb.dev.soton.ac.uk/study/facilities/imaging-microscopy-facilities",
+      "url": "https://oneweb.soton.ac.uk/study/facilities/imaging-microscopy-facilities",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -263,12 +263,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "edu-facility-node-174164",
       "referenceUrl": "https://oneweb.soton.ac.uk/node/174164",
-      "url": "https://oneweb.dev.soton.ac.uk/node/174164",
+      "url": "https://oneweb.soton.ac.uk/node/174164",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -277,12 +277,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "edu-facility-study-facilities-archaeology-labs",
       "referenceUrl": "https://oneweb.soton.ac.uk/study/facilities/archaeology-labs",
-      "url": "https://oneweb.dev.soton.ac.uk/study/facilities/archaeology-labs",
+      "url": "https://oneweb.soton.ac.uk/study/facilities/archaeology-labs",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -291,12 +291,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "event-open-days-july-arts-and-humanities",
       "referenceUrl": "https://oneweb.soton.ac.uk/open-days/july/arts-and-humanities",
-      "url": "https://oneweb.dev.soton.ac.uk/open-days/july/arts-and-humanities",
+      "url": "https://oneweb.soton.ac.uk/open-days/july/arts-and-humanities",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -305,12 +305,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "event-campaigns-events-first-look",
       "referenceUrl": "https://oneweb.soton.ac.uk/campaigns/events/first-look",
-      "url": "https://oneweb.dev.soton.ac.uk/campaigns/events/first-look",
+      "url": "https://oneweb.soton.ac.uk/campaigns/events/first-look",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -319,12 +319,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "event-open-days-july-environmental-and-life-sciences",
       "referenceUrl": "https://oneweb.soton.ac.uk/open-days/july/environmental-and-life-sciences",
-      "url": "https://oneweb.dev.soton.ac.uk/open-days/july/environmental-and-life-sciences",
+      "url": "https://oneweb.soton.ac.uk/open-days/july/environmental-and-life-sciences",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -333,12 +333,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "event-open-days-july-maths-engineering-and-physical-sciences",
       "referenceUrl": "https://oneweb.soton.ac.uk/open-days/july/maths-engineering-and-physical-sciences",
-      "url": "https://oneweb.dev.soton.ac.uk/open-days/july/maths-engineering-and-physical-sciences",
+      "url": "https://oneweb.soton.ac.uk/open-days/july/maths-engineering-and-physical-sciences",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -347,12 +347,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "filter-listing-virtual-open-day-13-10-2020",
       "referenceUrl": "https://oneweb.soton.ac.uk/virtual-open-day/13-10-2020",
-      "url": "https://oneweb.dev.soton.ac.uk/virtual-open-day/13-10-2020",
+      "url": "https://oneweb.soton.ac.uk/virtual-open-day/13-10-2020",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -361,12 +361,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "filter-listing-virtual-open-day-14-09-2020",
       "referenceUrl": "https://oneweb.soton.ac.uk/virtual-open-day/14-09-2020",
-      "url": "https://oneweb.dev.soton.ac.uk/virtual-open-day/14-09-2020",
+      "url": "https://oneweb.soton.ac.uk/virtual-open-day/14-09-2020",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -375,12 +375,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "filter-listing-virtual-open-day-07-10-2020",
       "referenceUrl": "https://oneweb.soton.ac.uk/virtual-open-day/07-10-2020",
-      "url": "https://oneweb.dev.soton.ac.uk/virtual-open-day/07-10-2020",
+      "url": "https://oneweb.soton.ac.uk/virtual-open-day/07-10-2020",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -389,12 +389,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "filter-listing-virtual-open-day-08-10-2020",
       "referenceUrl": "https://oneweb.soton.ac.uk/virtual-open-day/08-10-2020",
-      "url": "https://oneweb.dev.soton.ac.uk/virtual-open-day/08-10-2020",
+      "url": "https://oneweb.soton.ac.uk/virtual-open-day/08-10-2020",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -403,12 +403,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "hall-student-life-accommodation-halls-archers-road",
       "referenceUrl": "https://oneweb.soton.ac.uk/student-life/accommodation/halls/archers-road",
-      "url": "https://oneweb.dev.soton.ac.uk/student-life/accommodation/halls/archers-road",
+      "url": "https://oneweb.soton.ac.uk/student-life/accommodation/halls/archers-road",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -417,12 +417,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "hall-student-life-accommodation-halls-erasmus-park",
       "referenceUrl": "https://oneweb.soton.ac.uk/student-life/accommodation/halls/erasmus-park",
-      "url": "https://oneweb.dev.soton.ac.uk/student-life/accommodation/halls/erasmus-park",
+      "url": "https://oneweb.soton.ac.uk/student-life/accommodation/halls/erasmus-park",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -431,12 +431,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "hall-student-life-accommodation-halls-mayflower",
       "referenceUrl": "https://oneweb.soton.ac.uk/student-life/accommodation/halls/mayflower",
-      "url": "https://oneweb.dev.soton.ac.uk/student-life/accommodation/halls/mayflower",
+      "url": "https://oneweb.soton.ac.uk/student-life/accommodation/halls/mayflower",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -445,12 +445,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "hall-student-life-accommodation-halls-wessex-lane",
       "referenceUrl": "https://oneweb.soton.ac.uk/student-life/accommodation/halls/wessex-lane",
-      "url": "https://oneweb.dev.soton.ac.uk/student-life/accommodation/halls/wessex-lane",
+      "url": "https://oneweb.soton.ac.uk/student-life/accommodation/halls/wessex-lane",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -459,12 +459,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgr-project-study-postgraduate-research-projects-project-title-testb2",
       "referenceUrl": "https://oneweb.soton.ac.uk/study/postgraduate-research/projects/project-title-testb2",
-      "url": "https://oneweb.dev.soton.ac.uk/study/postgraduate-research/projects/project-title-testb2",
+      "url": "https://oneweb.soton.ac.uk/study/postgraduate-research/projects/project-title-testb2",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -473,12 +473,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgr-project-study-postgraduate-research-projects-project-title-testj10",
       "referenceUrl": "https://oneweb.soton.ac.uk/study/postgraduate-research/projects/project-title-testj10",
-      "url": "https://oneweb.dev.soton.ac.uk/study/postgraduate-research/projects/project-title-testj10",
+      "url": "https://oneweb.soton.ac.uk/study/postgraduate-research/projects/project-title-testj10",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -487,12 +487,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgr-project-study-postgraduate-research-projects-project-title-testk11",
       "referenceUrl": "https://oneweb.soton.ac.uk/study/postgraduate-research/projects/project-title-testk11",
-      "url": "https://oneweb.dev.soton.ac.uk/study/postgraduate-research/projects/project-title-testk11",
+      "url": "https://oneweb.soton.ac.uk/study/postgraduate-research/projects/project-title-testk11",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -501,12 +501,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgr-project-study-postgraduate-research-projects-project-title-testi9",
       "referenceUrl": "https://oneweb.soton.ac.uk/study/postgraduate-research/projects/project-title-testi9",
-      "url": "https://oneweb.dev.soton.ac.uk/study/postgraduate-research/projects/project-title-testi9",
+      "url": "https://oneweb.soton.ac.uk/study/postgraduate-research/projects/project-title-testi9",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -515,12 +515,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgr-topic-study-postgraduate-research-topics-ocean-earth-science",
       "referenceUrl": "https://oneweb.soton.ac.uk/study/postgraduate-research/topics/ocean-earth-science",
-      "url": "https://oneweb.dev.soton.ac.uk/study/postgraduate-research/topics/ocean-earth-science",
+      "url": "https://oneweb.soton.ac.uk/study/postgraduate-research/topics/ocean-earth-science",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -529,12 +529,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgr-topic-study-postgraduate-research-topics-philosophy",
       "referenceUrl": "https://oneweb.soton.ac.uk/study/postgraduate-research/topics/philosophy",
-      "url": "https://oneweb.dev.soton.ac.uk/study/postgraduate-research/topics/philosophy",
+      "url": "https://oneweb.soton.ac.uk/study/postgraduate-research/topics/philosophy",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -543,12 +543,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgr-topic-study-postgraduate-research-topics-test-pgr-topic2",
       "referenceUrl": "https://oneweb.soton.ac.uk/study/postgraduate-research/topics/test-pgr-topic2",
-      "url": "https://oneweb.dev.soton.ac.uk/study/postgraduate-research/topics/test-pgr-topic2",
+      "url": "https://oneweb.soton.ac.uk/study/postgraduate-research/topics/test-pgr-topic2",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -557,12 +557,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgr-topic-study-postgraduate-research-topics-fn-test-topic",
       "referenceUrl": "https://oneweb.soton.ac.uk/study/postgraduate-research/topics/fn-test-topic",
-      "url": "https://oneweb.dev.soton.ac.uk/study/postgraduate-research/topics/fn-test-topic",
+      "url": "https://oneweb.soton.ac.uk/study/postgraduate-research/topics/fn-test-topic",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -571,12 +571,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-cultural-heritage-studies-masters-ma",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/cultural-heritage-studies-masters-ma",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/cultural-heritage-studies-masters-ma",
+      "url": "https://oneweb.soton.ac.uk/courses/cultural-heritage-studies-masters-ma",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -585,12 +585,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-cultural-heritage-studies-masters-ma#entry",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#entry",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#entry",
+      "url": "https://oneweb.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#entry",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -599,12 +599,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-cultural-heritage-studies-masters-ma#structure",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#structure",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#structure",
+      "url": "https://oneweb.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#structure",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -613,12 +613,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-cultural-heritage-studies-masters-ma#modules",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#modules",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#modules",
+      "url": "https://oneweb.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#modules",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -627,12 +627,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-cultural-heritage-studies-masters-ma#learning",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#learning",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#learning",
+      "url": "https://oneweb.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#learning",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -641,12 +641,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-cultural-heritage-studies-masters-ma#careers",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#careers",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#careers",
+      "url": "https://oneweb.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#careers",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -655,12 +655,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-cultural-heritage-studies-masters-ma#fees",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#fees",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#fees",
+      "url": "https://oneweb.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#fees",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -669,12 +669,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-cultural-heritage-studies-masters-ma#apply",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#apply",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#apply",
+      "url": "https://oneweb.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#apply",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -683,12 +683,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-cultural-heritage-studies-masters-ma#related",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#related",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#related",
+      "url": "https://oneweb.soton.ac.uk/courses/cultural-heritage-studies-masters-ma#related",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -697,12 +697,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-computational-engineering-design-advanced-mechanical-engineering-science-masters-msc",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc",
+      "url": "https://oneweb.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -711,12 +711,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#entry",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#entry",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#entry",
+      "url": "https://oneweb.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#entry",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -725,12 +725,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#structure",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#structure",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#structure",
+      "url": "https://oneweb.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#structure",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -739,12 +739,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#modules",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#modules",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#modules",
+      "url": "https://oneweb.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#modules",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -753,12 +753,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#learning",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#learning",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#learning",
+      "url": "https://oneweb.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#learning",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -767,12 +767,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#careers",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#careers",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#careers",
+      "url": "https://oneweb.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#careers",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -781,12 +781,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#fees",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#fees",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#fees",
+      "url": "https://oneweb.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#fees",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -795,12 +795,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#apply",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#apply",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#apply",
+      "url": "https://oneweb.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#apply",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -809,12 +809,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#related",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#related",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#related",
+      "url": "https://oneweb.soton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc#related",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -823,12 +823,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-mobile-communications-smart-networking-masters-msc",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc",
+      "url": "https://oneweb.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -837,12 +837,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-mobile-communications-smart-networking-masters-msc#entry",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#entry",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#entry",
+      "url": "https://oneweb.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#entry",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -851,12 +851,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-mobile-communications-smart-networking-masters-msc#structure",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#structure",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#structure",
+      "url": "https://oneweb.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#structure",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -865,12 +865,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-mobile-communications-smart-networking-masters-msc#modules",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#modules",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#modules",
+      "url": "https://oneweb.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#modules",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -879,12 +879,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-mobile-communications-smart-networking-masters-msc#learning",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#learning",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#learning",
+      "url": "https://oneweb.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#learning",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -893,12 +893,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-mobile-communications-smart-networking-masters-msc#careers",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#careers",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#careers",
+      "url": "https://oneweb.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#careers",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -907,12 +907,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-mobile-communications-smart-networking-masters-msc#fees",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#fees",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#fees",
+      "url": "https://oneweb.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#fees",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -921,12 +921,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-mobile-communications-smart-networking-masters-msc#apply",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#apply",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#apply",
+      "url": "https://oneweb.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#apply",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -935,12 +935,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-mobile-communications-smart-networking-masters-msc#related",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#related",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#related",
+      "url": "https://oneweb.soton.ac.uk/courses/mobile-communications-smart-networking-masters-msc#related",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -949,12 +949,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-software-engineering-masters-msc",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/software-engineering-masters-msc",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/software-engineering-masters-msc",
+      "url": "https://oneweb.soton.ac.uk/courses/software-engineering-masters-msc",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -963,12 +963,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-software-engineering-masters-msc#entry",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/software-engineering-masters-msc#entry",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/software-engineering-masters-msc#entry",
+      "url": "https://oneweb.soton.ac.uk/courses/software-engineering-masters-msc#entry",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -977,12 +977,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-software-engineering-masters-msc#structure",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/software-engineering-masters-msc#structure",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/software-engineering-masters-msc#structure",
+      "url": "https://oneweb.soton.ac.uk/courses/software-engineering-masters-msc#structure",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -991,12 +991,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-software-engineering-masters-msc#modules",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/software-engineering-masters-msc#modules",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/software-engineering-masters-msc#modules",
+      "url": "https://oneweb.soton.ac.uk/courses/software-engineering-masters-msc#modules",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1005,12 +1005,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-software-engineering-masters-msc#learning",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/software-engineering-masters-msc#learning",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/software-engineering-masters-msc#learning",
+      "url": "https://oneweb.soton.ac.uk/courses/software-engineering-masters-msc#learning",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1019,12 +1019,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-software-engineering-masters-msc#careers",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/software-engineering-masters-msc#careers",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/software-engineering-masters-msc#careers",
+      "url": "https://oneweb.soton.ac.uk/courses/software-engineering-masters-msc#careers",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1033,12 +1033,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-software-engineering-masters-msc#fees",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/software-engineering-masters-msc#fees",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/software-engineering-masters-msc#fees",
+      "url": "https://oneweb.soton.ac.uk/courses/software-engineering-masters-msc#fees",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1047,12 +1047,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-software-engineering-masters-msc#apply",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/software-engineering-masters-msc#apply",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/software-engineering-masters-msc#apply",
+      "url": "https://oneweb.soton.ac.uk/courses/software-engineering-masters-msc#apply",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1061,12 +1061,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "pgt-course-courses-software-engineering-masters-msc#related",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/software-engineering-masters-msc#related",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/software-engineering-masters-msc#related",
+      "url": "https://oneweb.soton.ac.uk/courses/software-engineering-masters-msc#related",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1075,12 +1075,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-artd6113",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/artd6113",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/artd6113",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/artd6113",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1089,12 +1089,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-artd6113#aims",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/artd6113#aims",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/artd6113#aims",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/artd6113#aims",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1103,12 +1103,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-artd6113#syllabus",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/artd6113#syllabus",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/artd6113#syllabus",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/artd6113#syllabus",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1117,12 +1117,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-artd6113#learning",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/artd6113#learning",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/artd6113#learning",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/artd6113#learning",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1131,12 +1131,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-artd6113#assessment",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/artd6113#assessment",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/artd6113#assessment",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/artd6113#assessment",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1145,12 +1145,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-isvr6130",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/isvr6130",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/isvr6130",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/isvr6130",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1159,12 +1159,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-isvr6130#aims",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/isvr6130#aims",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/isvr6130#aims",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/isvr6130#aims",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1173,12 +1173,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-isvr6130#syllabus",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/isvr6130#syllabus",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/isvr6130#syllabus",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/isvr6130#syllabus",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1187,12 +1187,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-isvr6130#learning",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/isvr6130#learning",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/isvr6130#learning",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/isvr6130#learning",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1201,12 +1201,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-isvr6130#assessment",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/isvr6130#assessment",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/isvr6130#assessment",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/isvr6130#assessment",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1215,12 +1215,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-laws6156",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/laws6156",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/laws6156",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/laws6156",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1229,12 +1229,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-laws6156#aims",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/laws6156#aims",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/laws6156#aims",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/laws6156#aims",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1243,12 +1243,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-laws6156#syllabus",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/laws6156#syllabus",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/laws6156#syllabus",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/laws6156#syllabus",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1257,12 +1257,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-laws6156#learning",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/laws6156#learning",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/laws6156#learning",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/laws6156#learning",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1271,12 +1271,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-laws6156#assessment",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/laws6156#assessment",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/laws6156#assessment",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/laws6156#assessment",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1285,12 +1285,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-hsgm6001",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/hsgm6001",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/hsgm6001",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/hsgm6001",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1299,12 +1299,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-hsgm6001#aims",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/hsgm6001#aims",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/hsgm6001#aims",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/hsgm6001#aims",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1313,12 +1313,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-hsgm6001#syllabus",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/hsgm6001#syllabus",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/hsgm6001#syllabus",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/hsgm6001#syllabus",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1327,12 +1327,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-hsgm6001#learning",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/hsgm6001#learning",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/hsgm6001#learning",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/hsgm6001#learning",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1341,12 +1341,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "crums-module-data-courses-modules-hsgm6001#assessment",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules/hsgm6001#assessment",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules/hsgm6001#assessment",
+      "url": "https://oneweb.soton.ac.uk/courses/modules/hsgm6001#assessment",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1355,12 +1355,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "paginated-listing-courses-modules",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/modules",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/modules",
+      "url": "https://oneweb.soton.ac.uk/courses/modules",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1369,12 +1369,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "person-people-miss-jacquie-kelly",
       "referenceUrl": "https://oneweb.soton.ac.uk/people/miss-jacquie-kelly",
-      "url": "https://oneweb.dev.soton.ac.uk/people/miss-jacquie-kelly",
+      "url": "https://oneweb.soton.ac.uk/people/miss-jacquie-kelly",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1383,12 +1383,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "person-people-miss-eunice-williams",
       "referenceUrl": "https://oneweb.soton.ac.uk/people/miss-eunice-williams",
-      "url": "https://oneweb.dev.soton.ac.uk/people/miss-eunice-williams",
+      "url": "https://oneweb.soton.ac.uk/people/miss-eunice-williams",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1397,12 +1397,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "person-people-mr-samuel-isuwa",
       "referenceUrl": "https://oneweb.soton.ac.uk/people/mr-samuel-isuwa",
-      "url": "https://oneweb.dev.soton.ac.uk/people/mr-samuel-isuwa",
+      "url": "https://oneweb.soton.ac.uk/people/mr-samuel-isuwa",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1411,12 +1411,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "person-people-ms-nazli-turan",
       "referenceUrl": "https://oneweb.soton.ac.uk/people/ms-nazli-turan",
-      "url": "https://oneweb.dev.soton.ac.uk/people/ms-nazli-turan",
+      "url": "https://oneweb.soton.ac.uk/people/ms-nazli-turan",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1425,12 +1425,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "primary-index-page-offerholder",
       "referenceUrl": "https://oneweb.soton.ac.uk/offerholder",
-      "url": "https://oneweb.dev.soton.ac.uk/offerholder",
+      "url": "https://oneweb.soton.ac.uk/offerholder",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1439,12 +1439,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "primary-index-page-campaigns-strategy",
       "referenceUrl": "https://oneweb.soton.ac.uk/campaigns/strategy",
-      "url": "https://oneweb.dev.soton.ac.uk/campaigns/strategy",
+      "url": "https://oneweb.soton.ac.uk/campaigns/strategy",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1453,12 +1453,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "primary-index-page-campaigns-degrees-to-save-the-world",
       "referenceUrl": "https://oneweb.soton.ac.uk/campaigns/degrees-to-save-the-world",
-      "url": "https://oneweb.dev.soton.ac.uk/campaigns/degrees-to-save-the-world",
+      "url": "https://oneweb.soton.ac.uk/campaigns/degrees-to-save-the-world",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1467,12 +1467,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "primary-index-page-working-with-us",
       "referenceUrl": "https://oneweb.soton.ac.uk/working-with-us",
-      "url": "https://oneweb.dev.soton.ac.uk/working-with-us",
+      "url": "https://oneweb.soton.ac.uk/working-with-us",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1481,12 +1481,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-group-research-groups-cyber-physical-systems",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/groups/cyber-physical-systems",
-      "url": "https://oneweb.dev.soton.ac.uk/research/groups/cyber-physical-systems",
+      "url": "https://oneweb.soton.ac.uk/research/groups/cyber-physical-systems",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1495,12 +1495,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-group-research-groups-centre-for-clinical-community-applications-of-health-psychology",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/groups/centre-for-clinical-community-applications-of-health-psychology",
-      "url": "https://oneweb.dev.soton.ac.uk/research/groups/centre-for-clinical-community-applications-of-health-psychology",
+      "url": "https://oneweb.soton.ac.uk/research/groups/centre-for-clinical-community-applications-of-health-psychology",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1509,12 +1509,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-group-research-groups-centre-for-language-study",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/groups/centre-for-language-study",
-      "url": "https://oneweb.dev.soton.ac.uk/research/groups/centre-for-language-study",
+      "url": "https://oneweb.soton.ac.uk/research/groups/centre-for-language-study",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1523,12 +1523,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-group-research-groups-operational-research",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/groups/operational-research",
-      "url": "https://oneweb.dev.soton.ac.uk/research/groups/operational-research",
+      "url": "https://oneweb.soton.ac.uk/research/groups/operational-research",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1537,12 +1537,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-institute-and-centre-research-institutes-centres-energy-climate-change-group",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/institutes-centres/energy-climate-change-group",
-      "url": "https://oneweb.dev.soton.ac.uk/research/institutes-centres/energy-climate-change-group",
+      "url": "https://oneweb.soton.ac.uk/research/institutes-centres/energy-climate-change-group",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1551,12 +1551,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-institute-and-centre-research-institutes-centres-centre-for-implementation-science",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/institutes-centres/centre-for-implementation-science",
-      "url": "https://oneweb.dev.soton.ac.uk/research/institutes-centres/centre-for-implementation-science",
+      "url": "https://oneweb.soton.ac.uk/research/institutes-centres/centre-for-implementation-science",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1565,12 +1565,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-institute-and-centre-research-institutes-centres-centre-for-operational-research-management-science-information-systems",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/institutes-centres/centre-for-operational-research-management-science-information-systems",
-      "url": "https://oneweb.dev.soton.ac.uk/research/institutes-centres/centre-for-operational-research-management-science-information-systems",
+      "url": "https://oneweb.soton.ac.uk/research/institutes-centres/centre-for-operational-research-management-science-information-systems",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1579,12 +1579,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-institute-and-centre-research-institutes-centres-national-oceanography-centre",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/institutes-centres/national-oceanography-centre",
-      "url": "https://oneweb.dev.soton.ac.uk/research/institutes-centres/national-oceanography-centre",
+      "url": "https://oneweb.soton.ac.uk/research/institutes-centres/national-oceanography-centre",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1593,12 +1593,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-project-research-projects-sound-matters",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/projects/sound-matters",
-      "url": "https://oneweb.dev.soton.ac.uk/research/projects/sound-matters",
+      "url": "https://oneweb.soton.ac.uk/research/projects/sound-matters",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1607,12 +1607,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-project-research-projects-pasoa",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/projects/pasoa",
-      "url": "https://oneweb.dev.soton.ac.uk/research/projects/pasoa",
+      "url": "https://oneweb.soton.ac.uk/research/projects/pasoa",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1621,12 +1621,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-project-research-projects-closed-dearing-espa-putting-espa-research-into-use-project",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/projects/closed-dearing-espa-putting-espa-research-into-use-project",
-      "url": "https://oneweb.dev.soton.ac.uk/research/projects/closed-dearing-espa-putting-espa-research-into-use-project",
+      "url": "https://oneweb.soton.ac.uk/research/projects/closed-dearing-espa-putting-espa-research-into-use-project",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1635,12 +1635,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-project-research-projects-xl-zhang-microscale-gas-liquid-interface-dynamics-during-co2-absorption",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/projects/xl-zhang-microscale-gas-liquid-interface-dynamics-during-co2-absorption",
-      "url": "https://oneweb.dev.soton.ac.uk/research/projects/xl-zhang-microscale-gas-liquid-interface-dynamics-during-co2-absorption",
+      "url": "https://oneweb.soton.ac.uk/research/projects/xl-zhang-microscale-gas-liquid-interface-dynamics-during-co2-absorption",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1649,12 +1649,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-area-research-areas-archaeology",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/areas/archaeology",
-      "url": "https://oneweb.dev.soton.ac.uk/research/areas/archaeology",
+      "url": "https://oneweb.soton.ac.uk/research/areas/archaeology",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1663,12 +1663,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-area-research-areas-law",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/areas/law",
-      "url": "https://oneweb.dev.soton.ac.uk/research/areas/law",
+      "url": "https://oneweb.soton.ac.uk/research/areas/law",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1677,12 +1677,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-area-research-areas-social-statistics-demography",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/areas/social-statistics-demography",
-      "url": "https://oneweb.dev.soton.ac.uk/research/areas/social-statistics-demography",
+      "url": "https://oneweb.soton.ac.uk/research/areas/social-statistics-demography",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1691,12 +1691,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-area-research-areas-medicine",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/areas/medicine",
-      "url": "https://oneweb.dev.soton.ac.uk/research/areas/medicine",
+      "url": "https://oneweb.soton.ac.uk/research/areas/medicine",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1705,12 +1705,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-facility-research-facilities-algal-biomass-facilities",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/facilities/algal-biomass-facilities",
-      "url": "https://oneweb.dev.soton.ac.uk/research/facilities/algal-biomass-facilities",
+      "url": "https://oneweb.soton.ac.uk/research/facilities/algal-biomass-facilities",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1719,12 +1719,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-facility-research-facilities-tony-davies-high-voltage-laboratory",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/facilities/tony-davies-high-voltage-laboratory",
-      "url": "https://oneweb.dev.soton.ac.uk/research/facilities/tony-davies-high-voltage-laboratory",
+      "url": "https://oneweb.soton.ac.uk/research/facilities/tony-davies-high-voltage-laboratory",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1733,12 +1733,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-facility-research-facilities-lithography-facility",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/facilities/lithography-facility",
-      "url": "https://oneweb.dev.soton.ac.uk/research/facilities/lithography-facility",
+      "url": "https://oneweb.soton.ac.uk/research/facilities/lithography-facility",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1747,12 +1747,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-facility-research-facilities-national-infrastructure-laboratory",
       "referenceUrl": "https://oneweb.soton.ac.uk/research/facilities/national-infrastructure-laboratory",
-      "url": "https://oneweb.dev.soton.ac.uk/research/facilities/national-infrastructure-laboratory",
+      "url": "https://oneweb.soton.ac.uk/research/facilities/national-infrastructure-laboratory",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1761,12 +1761,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-partner-node-179300",
       "referenceUrl": "https://oneweb.soton.ac.uk/node/179300",
-      "url": "https://oneweb.dev.soton.ac.uk/node/179300",
+      "url": "https://oneweb.soton.ac.uk/node/179300",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1775,12 +1775,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-partner-node-179305",
       "referenceUrl": "https://oneweb.soton.ac.uk/node/179305",
-      "url": "https://oneweb.dev.soton.ac.uk/node/179305",
+      "url": "https://oneweb.soton.ac.uk/node/179305",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1789,12 +1789,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-partner-node-179301",
       "referenceUrl": "https://oneweb.soton.ac.uk/node/179301",
-      "url": "https://oneweb.dev.soton.ac.uk/node/179301",
+      "url": "https://oneweb.soton.ac.uk/node/179301",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1803,12 +1803,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "research-partner-node-179302",
       "referenceUrl": "https://oneweb.soton.ac.uk/node/179302",
-      "url": "https://oneweb.dev.soton.ac.uk/node/179302",
+      "url": "https://oneweb.soton.ac.uk/node/179302",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1817,12 +1817,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "secondary-index-page-sport-wellbeing-courses-qualifications-sailing",
       "referenceUrl": "https://oneweb.soton.ac.uk/sport-wellbeing/courses-qualifications/sailing",
-      "url": "https://oneweb.dev.soton.ac.uk/sport-wellbeing/courses-qualifications/sailing",
+      "url": "https://oneweb.soton.ac.uk/sport-wellbeing/courses-qualifications/sailing",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1831,12 +1831,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "secondary-index-page-campaigns-strategy-triple-helix",
       "referenceUrl": "https://oneweb.soton.ac.uk/campaigns/strategy/triple-helix",
-      "url": "https://oneweb.dev.soton.ac.uk/campaigns/strategy/triple-helix",
+      "url": "https://oneweb.soton.ac.uk/campaigns/strategy/triple-helix",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1845,12 +1845,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "secondary-index-page-working-with-us-campuses",
       "referenceUrl": "https://oneweb.soton.ac.uk/working-with-us/campuses",
-      "url": "https://oneweb.dev.soton.ac.uk/working-with-us/campuses",
+      "url": "https://oneweb.soton.ac.uk/working-with-us/campuses",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1859,12 +1859,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "secondary-index-page-sport-wellbeing-courses-qualifications",
       "referenceUrl": "https://oneweb.soton.ac.uk/sport-wellbeing/courses-qualifications",
-      "url": "https://oneweb.dev.soton.ac.uk/sport-wellbeing/courses-qualifications",
+      "url": "https://oneweb.soton.ac.uk/sport-wellbeing/courses-qualifications",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1873,12 +1873,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "study-highlight-story-node-174080",
       "referenceUrl": "https://oneweb.soton.ac.uk/node/174080",
-      "url": "https://oneweb.dev.soton.ac.uk/node/174080",
+      "url": "https://oneweb.soton.ac.uk/node/174080",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1887,12 +1887,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "study-highlight-story-node-174077",
       "referenceUrl": "https://oneweb.soton.ac.uk/node/174077",
-      "url": "https://oneweb.dev.soton.ac.uk/node/174077",
+      "url": "https://oneweb.soton.ac.uk/node/174077",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1901,12 +1901,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "subject-area-study-subjects-politics-international-relations",
       "referenceUrl": "https://oneweb.soton.ac.uk/study/subjects/politics-international-relations",
-      "url": "https://oneweb.dev.soton.ac.uk/study/subjects/politics-international-relations",
+      "url": "https://oneweb.soton.ac.uk/study/subjects/politics-international-relations",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1915,12 +1915,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "subject-area-study-subjects-ocean-earth-science",
       "referenceUrl": "https://oneweb.soton.ac.uk/study/subjects/ocean-earth-science",
-      "url": "https://oneweb.dev.soton.ac.uk/study/subjects/ocean-earth-science",
+      "url": "https://oneweb.soton.ac.uk/study/subjects/ocean-earth-science",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1929,12 +1929,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "subject-area-study-subjects-mechanical-engineering",
       "referenceUrl": "https://oneweb.soton.ac.uk/study/subjects/mechanical-engineering",
-      "url": "https://oneweb.dev.soton.ac.uk/study/subjects/mechanical-engineering",
+      "url": "https://oneweb.soton.ac.uk/study/subjects/mechanical-engineering",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1943,12 +1943,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "subject-area-study-subjects-sound-vibration",
       "referenceUrl": "https://oneweb.soton.ac.uk/study/subjects/sound-vibration",
-      "url": "https://oneweb.dev.soton.ac.uk/study/subjects/sound-vibration",
+      "url": "https://oneweb.soton.ac.uk/study/subjects/sound-vibration",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1957,12 +1957,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-french-and-linguistics-degree-mlang",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/french-and-linguistics-degree-mlang",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/french-and-linguistics-degree-mlang",
+      "url": "https://oneweb.soton.ac.uk/courses/french-and-linguistics-degree-mlang",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1971,12 +1971,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-french-and-linguistics-degree-mlang#entry",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/french-and-linguistics-degree-mlang#entry",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/french-and-linguistics-degree-mlang#entry",
+      "url": "https://oneweb.soton.ac.uk/courses/french-and-linguistics-degree-mlang#entry",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1985,12 +1985,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-french-and-linguistics-degree-mlang#structure",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/french-and-linguistics-degree-mlang#structure",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/french-and-linguistics-degree-mlang#structure",
+      "url": "https://oneweb.soton.ac.uk/courses/french-and-linguistics-degree-mlang#structure",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -1999,12 +1999,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-french-and-linguistics-degree-mlang#modules",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/french-and-linguistics-degree-mlang#modules",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/french-and-linguistics-degree-mlang#modules",
+      "url": "https://oneweb.soton.ac.uk/courses/french-and-linguistics-degree-mlang#modules",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2013,12 +2013,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-french-and-linguistics-degree-mlang#learning",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/french-and-linguistics-degree-mlang#learning",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/french-and-linguistics-degree-mlang#learning",
+      "url": "https://oneweb.soton.ac.uk/courses/french-and-linguistics-degree-mlang#learning",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2027,12 +2027,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-french-and-linguistics-degree-mlang#careers",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/french-and-linguistics-degree-mlang#careers",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/french-and-linguistics-degree-mlang#careers",
+      "url": "https://oneweb.soton.ac.uk/courses/french-and-linguistics-degree-mlang#careers",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2041,12 +2041,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-french-and-linguistics-degree-mlang#fees",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/french-and-linguistics-degree-mlang#fees",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/french-and-linguistics-degree-mlang#fees",
+      "url": "https://oneweb.soton.ac.uk/courses/french-and-linguistics-degree-mlang#fees",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2055,12 +2055,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-french-and-linguistics-degree-mlang#apply",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/french-and-linguistics-degree-mlang#apply",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/french-and-linguistics-degree-mlang#apply",
+      "url": "https://oneweb.soton.ac.uk/courses/french-and-linguistics-degree-mlang#apply",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2069,12 +2069,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-french-and-linguistics-degree-mlang#related",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/french-and-linguistics-degree-mlang#related",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/french-and-linguistics-degree-mlang#related",
+      "url": "https://oneweb.soton.ac.uk/courses/french-and-linguistics-degree-mlang#related",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2083,12 +2083,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-geology-degree-bsc",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/geology-degree-bsc",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/geology-degree-bsc",
+      "url": "https://oneweb.soton.ac.uk/courses/geology-degree-bsc",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2097,12 +2097,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-geology-degree-bsc#entry",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/geology-degree-bsc#entry",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/geology-degree-bsc#entry",
+      "url": "https://oneweb.soton.ac.uk/courses/geology-degree-bsc#entry",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2111,12 +2111,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-geology-degree-bsc#structure",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/geology-degree-bsc#structure",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/geology-degree-bsc#structure",
+      "url": "https://oneweb.soton.ac.uk/courses/geology-degree-bsc#structure",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2125,12 +2125,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-geology-degree-bsc#modules",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/geology-degree-bsc#modules",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/geology-degree-bsc#modules",
+      "url": "https://oneweb.soton.ac.uk/courses/geology-degree-bsc#modules",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2139,12 +2139,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-geology-degree-bsc#learning",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/geology-degree-bsc#learning",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/geology-degree-bsc#learning",
+      "url": "https://oneweb.soton.ac.uk/courses/geology-degree-bsc#learning",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2153,12 +2153,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-geology-degree-bsc#careers",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/geology-degree-bsc#careers",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/geology-degree-bsc#careers",
+      "url": "https://oneweb.soton.ac.uk/courses/geology-degree-bsc#careers",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2167,12 +2167,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-geology-degree-bsc#fees",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/geology-degree-bsc#fees",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/geology-degree-bsc#fees",
+      "url": "https://oneweb.soton.ac.uk/courses/geology-degree-bsc#fees",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2181,12 +2181,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-geology-degree-bsc#apply",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/geology-degree-bsc#apply",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/geology-degree-bsc#apply",
+      "url": "https://oneweb.soton.ac.uk/courses/geology-degree-bsc#apply",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2195,12 +2195,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-geology-degree-bsc#related",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/geology-degree-bsc#related",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/geology-degree-bsc#related",
+      "url": "https://oneweb.soton.ac.uk/courses/geology-degree-bsc#related",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2209,12 +2209,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-business-management-and-german-degree-bsc",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/business-management-and-german-degree-bsc",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/business-management-and-german-degree-bsc",
+      "url": "https://oneweb.soton.ac.uk/courses/business-management-and-german-degree-bsc",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2223,12 +2223,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-business-management-and-german-degree-bsc#entry",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/business-management-and-german-degree-bsc#entry",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/business-management-and-german-degree-bsc#entry",
+      "url": "https://oneweb.soton.ac.uk/courses/business-management-and-german-degree-bsc#entry",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2237,12 +2237,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-business-management-and-german-degree-bsc#structure",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/business-management-and-german-degree-bsc#structure",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/business-management-and-german-degree-bsc#structure",
+      "url": "https://oneweb.soton.ac.uk/courses/business-management-and-german-degree-bsc#structure",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2251,12 +2251,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-business-management-and-german-degree-bsc#modules",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/business-management-and-german-degree-bsc#modules",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/business-management-and-german-degree-bsc#modules",
+      "url": "https://oneweb.soton.ac.uk/courses/business-management-and-german-degree-bsc#modules",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2265,12 +2265,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-business-management-and-german-degree-bsc#learning",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/business-management-and-german-degree-bsc#learning",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/business-management-and-german-degree-bsc#learning",
+      "url": "https://oneweb.soton.ac.uk/courses/business-management-and-german-degree-bsc#learning",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2279,12 +2279,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-business-management-and-german-degree-bsc#careers",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/business-management-and-german-degree-bsc#careers",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/business-management-and-german-degree-bsc#careers",
+      "url": "https://oneweb.soton.ac.uk/courses/business-management-and-german-degree-bsc#careers",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2293,12 +2293,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-business-management-and-german-degree-bsc#fees",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/business-management-and-german-degree-bsc#fees",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/business-management-and-german-degree-bsc#fees",
+      "url": "https://oneweb.soton.ac.uk/courses/business-management-and-german-degree-bsc#fees",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2307,12 +2307,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-business-management-and-german-degree-bsc#apply",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/business-management-and-german-degree-bsc#apply",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/business-management-and-german-degree-bsc#apply",
+      "url": "https://oneweb.soton.ac.uk/courses/business-management-and-german-degree-bsc#apply",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2321,12 +2321,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-business-management-and-german-degree-bsc#related",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/business-management-and-german-degree-bsc#related",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/business-management-and-german-degree-bsc#related",
+      "url": "https://oneweb.soton.ac.uk/courses/business-management-and-german-degree-bsc#related",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2335,12 +2335,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-chemistry-digital-methods-computational-modelling-degree-mchem",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem",
+      "url": "https://oneweb.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2349,12 +2349,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-chemistry-digital-methods-computational-modelling-degree-mchem#entry",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#entry",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#entry",
+      "url": "https://oneweb.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#entry",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2363,12 +2363,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-chemistry-digital-methods-computational-modelling-degree-mchem#structure",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#structure",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#structure",
+      "url": "https://oneweb.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#structure",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2377,12 +2377,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-chemistry-digital-methods-computational-modelling-degree-mchem#modules",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#modules",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#modules",
+      "url": "https://oneweb.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#modules",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2391,12 +2391,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-chemistry-digital-methods-computational-modelling-degree-mchem#learning",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#learning",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#learning",
+      "url": "https://oneweb.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#learning",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2405,12 +2405,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-chemistry-digital-methods-computational-modelling-degree-mchem#careers",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#careers",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#careers",
+      "url": "https://oneweb.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#careers",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2419,12 +2419,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-chemistry-digital-methods-computational-modelling-degree-mchem#fees",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#fees",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#fees",
+      "url": "https://oneweb.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#fees",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2433,12 +2433,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-chemistry-digital-methods-computational-modelling-degree-mchem#apply",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#apply",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#apply",
+      "url": "https://oneweb.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#apply",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2447,12 +2447,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "ug-course-courses-chemistry-digital-methods-computational-modelling-degree-mchem#related",
       "referenceUrl": "https://oneweb.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#related",
-      "url": "https://oneweb.dev.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#related",
+      "url": "https://oneweb.soton.ac.uk/courses/chemistry-digital-methods-computational-modelling-degree-mchem#related",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2461,12 +2461,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "vod-itinerary-visit-day-27-01-2021-mathematics",
       "referenceUrl": "https://oneweb.soton.ac.uk/visit-day/27-01-2021/mathematics",
-      "url": "https://oneweb.dev.soton.ac.uk/visit-day/27-01-2021/mathematics",
+      "url": "https://oneweb.soton.ac.uk/visit-day/27-01-2021/mathematics",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2475,12 +2475,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "vod-itinerary-visit-day-17-02-2021-population-and-geography",
       "referenceUrl": "https://oneweb.soton.ac.uk/visit-day/17-02-2021/population-and-geography",
-      "url": "https://oneweb.dev.soton.ac.uk/visit-day/17-02-2021/population-and-geography",
+      "url": "https://oneweb.soton.ac.uk/visit-day/17-02-2021/population-and-geography",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2489,12 +2489,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "vod-itinerary-visit-day-14-04-2021-film-studies",
       "referenceUrl": "https://oneweb.soton.ac.uk/visit-day/14-04-2021/film-studies",
-      "url": "https://oneweb.dev.soton.ac.uk/visit-day/14-04-2021/film-studies",
+      "url": "https://oneweb.soton.ac.uk/visit-day/14-04-2021/film-studies",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2503,12 +2503,12 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    },
    {
       "label": "vod-itinerary-visit-day-23-02-2021-ecs-electrical-and-electronic-engineering",
       "referenceUrl": "https://oneweb.soton.ac.uk/visit-day/23-02-2021/ecs-electrical-and-electronic-engineering",
-      "url": "https://oneweb.dev.soton.ac.uk/visit-day/23-02-2021/ecs-electrical-and-electronic-engineering",
+      "url": "https://oneweb.soton.ac.uk/visit-day/23-02-2021/ecs-electrical-and-electronic-engineering",
       "onReadyScript": "puppet/onReady.js",
       "removeSelectors": [
          "#GeckoChatWidget",
@@ -2517,6 +2517,6 @@
       "hideSelectors": [
          "#btn.btn-top.btn-primary.z-10.btn-top--display"
       ],
-      "delay": "5000"
+      "delay": "6000"
    }
 ]

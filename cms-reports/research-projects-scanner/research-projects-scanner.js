@@ -4,7 +4,7 @@ const yargs = require("yargs");
 const htmlFunctions = require('../local-modules/html-functions');
 const urlGenerator = require('../local-modules/site-urls');
 const globalSettings = require('../local-modules/report-settings');
-const { exit } = require('process');
+const { exit, title } = require('process');
 const { time } = require('console');
 
 const REPORTS_DATA_FOLDER = globalSettings.getReportsFolder();
@@ -91,6 +91,7 @@ async function generateReport(urllimit, domain, debug) {
 
 
 
+
   //open the browser and use one page to get the data
   //much quicker
   try {
@@ -103,6 +104,8 @@ async function generateReport(urllimit, domain, debug) {
     console.log('Unable to startup browser ' + error);
     process.exit();
   }
+
+
 
   var timeBeforeRun = new Date();
 
@@ -143,12 +146,24 @@ async function generateReport(urllimit, domain, debug) {
 
       // setup the browser and go to the test url
       //browser = await puppeteer.launch();
-      var projectURL = siteURLS[i].toString();
+
+
+      var projectURL = siteURLS[i][0].toString();
+      var projectTitle = siteURLS[i][1].toString();
+      var projectFaculty = siteURLS[i][2].toString();
+      var projectSchool = siteURLS[i][3].toString().replace(/,/g, " "); //replace commas with a space
+      projectTitle = projectTitle.replace(/,/g, " ");
 
 
 
       //projectURL = 'https://oneweb.pprd.soton.ac.uk/people/alexander-mortensen';
       //output progress
+      //console.log(i + " - " + projectURL);
+      //console.log('title = ' + projectURL);
+      //console.log('faculty = ' + projectFaculty);
+      //console.log('school = ' + projectSchool);
+
+
       console.log(i + " - " + projectURL);
 
       try {
@@ -166,7 +181,7 @@ async function generateReport(urllimit, domain, debug) {
             timeout: 120000,
             headless: true,
             args: ['--no-sandbox']
-        });
+          });
           console.log('--> launched new browser');
           page = await browser.newPage();
           console.log('--> launched new page');
@@ -210,6 +225,8 @@ async function generateReport(urllimit, domain, debug) {
         console.log(error);
 
       }
+
+
 
 
       //project hero
@@ -411,28 +428,37 @@ async function generateReport(urllimit, domain, debug) {
       //find lead researcher's faculty and school
       let leadResearcherFaculty = '';
       let leadResearcherSchool = '';
-      personURLs.forEach(person => {
-        var personURL = person[0].toString();
-        var personFaculty = person[2].toString();
-        var personSchool = person[3].toString();
-        var personSchoolDepartment = person[4].toString();
 
-        personURL = personURL.slice(26);
 
-        if (leadResearcherURL == personURL) {
-          leadResearcherFaculty = personFaculty;
-          leadResearcherSchool = personSchool;
-        }
-      });
+      if ((projectFaculty == '') && (leadResearcherURL != '')) {
+        console.log('Faculty empty');
+        console.log('Lead researcher --> ' + leadResearcherURL);
+        personURLs.forEach(person => {
+          var personURL = person[0].toString();
+          var personFaculty = person[2].toString();
+          var personSchool = person[3].toString();
+
+          personURL = personURL.slice(26);
+          //console.log(leadResearcherURL + ' ---> ' + personURL);
+
+          if (leadResearcherURL == personURL) {
+            projectFaculty = personFaculty;
+            projectSchool = personSchool;
+
+            console.log('==> faculty not found, using this from lead researcher ===> ' + projectFaculty + ' - ' + projectSchool);
+          }
+        });
+      }
 
       //create lead researcher url
       let projectLeadResearcherURL = '<a href="' + 'https://oneweb.soton.ac.uk/' + leadResearcherURL + '" target="_blank"> ' + leadResearcherName + '</a';
-      let projectTitleURL = '<a href="' + projectURL + '" target="_blank"> ' + projectTitleValue + '</a';
+      let projectTitleURL = '<a href="' + projectURL + '" target="_blank"> ' + projectTitleValue + '</a>';
 
       if (projectDataCount != 0) {
         //projectDataCount = '404!';
-        projectData.push([projectTitleURL, projectStatusValue, projectResearchFunderValue, projectLeadResearcherURL, leadResearcherFaculty, leadResearcherSchool, projectPageLoadTime.toString(), projectDataCount.toString(), projectTitleFound, projectResearchAreaFound, projectResearchGroupFound, projectLeadResearcherFound, projectOtherResearchersFound, projectResearchFunderFound, projectWebsiteFound, projectStatusFound, projectOverviewFound, projectStaffLeadResearcherFound, projectStaffOtherResearchersFound, projectResearchOutputsFound, projectPartnersFound]);
-        projectDataCSV.push([projectTitleURL, projectTitleValue, projectStatusValue, projectResearchFunderValue, projectLeadResearcherURL, leadResearcherName, leadResearcherFaculty, leadResearcherSchool, projectPageLoadTime.toString(), projectDataCount.toString(), projectTitleFound, projectResearchAreaFound, projectResearchGroupFound, projectLeadResearcherFound, projectOtherResearchersFound, projectResearchFunderFound, projectWebsiteFound, projectStatusFound, projectOverviewFound, projectStaffLeadResearcherFound, projectStaffOtherResearchersFound, projectResearchOutputsFound, projectPartnersFound]);
+        projectData.push([projectTitleURL, projectStatusValue, projectResearchFunderValue, projectLeadResearcherURL, projectFaculty, projectSchool, projectPageLoadTime.toString(), projectDataCount.toString(), projectTitleFound, projectResearchAreaFound, projectResearchGroupFound, projectLeadResearcherFound, projectOtherResearchersFound, projectResearchFunderFound, projectWebsiteFound, projectStatusFound, projectOverviewFound, projectStaffLeadResearcherFound, projectStaffOtherResearchersFound, projectResearchOutputsFound, projectPartnersFound]);
+
+        projectDataCSV.push([projectTitleURL, projectTitleValue, projectStatusValue, projectResearchFunderValue, projectLeadResearcherURL, leadResearcherName, projectFaculty, projectSchool, projectPageLoadTime.toString(), projectDataCount.toString(), projectTitleFound, projectResearchAreaFound, projectResearchGroupFound, projectLeadResearcherFound, projectOtherResearchersFound, projectResearchFunderFound, projectWebsiteFound, projectStatusFound, projectOverviewFound, projectStaffLeadResearcherFound, projectStaffOtherResearchersFound, projectResearchOutputsFound, projectPartnersFound]);
       }
 
       if (projectTitleValue.toString() === previousTitle.toString()) {

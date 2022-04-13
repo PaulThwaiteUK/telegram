@@ -389,8 +389,8 @@ async function getAllDrupalURLs(domainURL, domain) {
     console.log(personData.length);
     researchProjectData.sort();
     reportString = JSON.stringify(researchProjectData, null, 3);
-    fs.writeFileSync('../url-lists/research-project-urls-' + domain + '.json', reportString);
-    fs.writeFileSync('../url-lists/research-project-urls-' + domain + '.txt', researchProjectData.toString());
+    //fs.writeFileSync('../url-lists/research-project-urls-' + domain + '.json', reportString);
+    //fs.writeFileSync('../url-lists/research-project-urls-' + domain + '.txt', researchProjectData.toString());
 
     //
     //research groups
