@@ -79,6 +79,7 @@ function displayStaffProfileTakeUp(quantity) {
 
   //create an array to capture the percentages
   var fieldUsagePercentage = [];
+
   var fieldLabels = [];
   var fieldLabelsInt = [];
 
@@ -90,14 +91,25 @@ function displayStaffProfileTakeUp(quantity) {
     var percentage = Math.round((value / totalNumberLiveProfiles) * 100);
     var percentage = (value / totalNumberLiveProfiles) * 100;
 
-    console.log('value = ' + value + ' per = ' + percentage);
+    console.log('index ' + index + ' value = ' + value + ' per = ' + percentage);
 
     fieldLabels.push("'" + index + "'");
     fieldLabelsInt.push(index);
-    fieldUsagePercentage.push(percentage);
+    if (Number.isNaN(value)) {
+      fieldUsagePercentage.push(0);
+    } else {
+      fieldUsagePercentage.push(percentage);
+    }
+
 
     count = count + value;
 
+  }
+
+  for (let index = 0; index < 24; index++) {
+    if (Number.isNaN(fieldUsagePercentage[index])) {
+      fieldUsagePercentage[index] = 0;
+    }
   }
 
   console.log('count = ' + count);
@@ -105,12 +117,15 @@ function displayStaffProfileTakeUp(quantity) {
   var chartLabels = [];
   var chartData = [];
 
+
+
+
   //1-8
   var level1Percentage = fieldUsagePercentage[0] + fieldUsagePercentage[1] + fieldUsagePercentage[2] + fieldUsagePercentage[4] + fieldUsagePercentage[4] + fieldUsagePercentage[5] + fieldUsagePercentage[6] + fieldUsagePercentage[7];
 
   var level2Percentage = fieldUsagePercentage[8] + fieldUsagePercentage[9] + fieldUsagePercentage[10] + fieldUsagePercentage[11] + fieldUsagePercentage[12] + fieldUsagePercentage[13] + fieldUsagePercentage[14] + fieldUsagePercentage[15];
 
-  var level3Percentage = fieldUsagePercentage[16] + fieldUsagePercentage[17] + fieldUsagePercentage[18] + fieldUsagePercentage[19] + fieldUsagePercentage[20] + fieldUsagePercentage[21] + fieldUsagePercentage[22] + fieldUsagePercentage[23];
+  var level3Percentage = fieldUsagePercentage[16] + fieldUsagePercentage[17] + fieldUsagePercentage[18] + fieldUsagePercentage[19] + fieldUsagePercentage[20] + fieldUsagePercentage[21] + fieldUsagePercentage[22];
 
   var level1 = fieldIndex[0] + fieldIndex[1] + fieldIndex[2] + fieldIndex[4] + fieldIndex[4] + fieldIndex[5] + fieldIndex[6] + fieldIndex[7];
 
