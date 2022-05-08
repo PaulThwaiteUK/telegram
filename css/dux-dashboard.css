@@ -106,8 +106,12 @@ td {
   border-color: #808080;
 }
 
+.standard table {
+  width: auto;
+}
+
 table {
-  width: 130%;
+  width: auto;
 }
 
 table.fixed {
@@ -224,4 +228,8 @@ table thead th {
 
 #bug-collector a:hover {
   background-color: #003977;
+}
+
+#menu-cta a {
+  text-decoration: none;
 }

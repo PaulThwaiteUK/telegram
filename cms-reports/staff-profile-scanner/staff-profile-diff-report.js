@@ -4,7 +4,6 @@ const puppeteer = require('puppeteer');
 const yargs = require("yargs");
 const { runMain } = require('module');
 const globalSettings = require('../local-modules/report-settings');
-const { checkLegacyResponse } = require('selenium-webdriver/lib/error');
 const REPORTS_DATA_FOLDER = globalSettings.getReportsFolder();
 
 function getTimestamp() {
@@ -108,8 +107,7 @@ function performStaffProfileDiff(domain) {
       }
     })
 
-   console.log(ddd);
-   
+
 
     if (!found) {
 
@@ -197,6 +195,10 @@ function performStaffProfileDiff(domain) {
 
   console.log(progressDataArray);
 
+  progressDataArray.sort(function (b, a) {
+    return a[0] - b[0];
+  })
+
 
   //write the datafile out with latest data
   var csv = progressDataArray.map(function (d) {
@@ -246,12 +248,24 @@ function performStaffProfileDiff(domain) {
 
   //create html report
   var htmlReport = '';
-  htmlReport += '<html><head></head><body>';
-  htmlReport += '<h1>Digital UX - Staff profile difference report</h1>';
+  htmlReport = '<html><head>';
+  htmlReport += `
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital UX Team - Staff Profile Dashboard</title>
+    <!--Chart.js JS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../../../css/dux-dashboard.css" />
+    <link
+      rel="icon"
+      href="http://dux.soton.ac.uk/drupal-reports/favicon/favicon.ico"
+    />`;
+  htmlReport += '<header id="mainheader"> <div class="container"> <h1>Digital UX Team - Staff profile difference report</h1></div></header>';
+  htmlReport += '<section class="mainsection">';
   //htmlReport += '<br>';
-  htmlReport += '<div>Report date : ' + today + ' on the ' + domain + ' server</div>';
-  htmlReport += '<hr>';
+  //htmlReport += '<hr>';
   htmlReport += '<h2>Summary</h2>';
+  htmlReport += '<div id="reportdate">Dashboard last updated on ' + today + '.</div>';
   htmlReport += '<div>Comparing:</div>';
   htmlReport += '<div><ul><li>' + currentListCount + ' profiles in <b>latest</b> (' + current + ')';
   htmlReport += '<li>' + previousListCount + ' profiles in <b>previous</b> (' + previous + ')</ul></div>';
@@ -259,23 +273,23 @@ function performStaffProfileDiff(domain) {
   htmlReport += '<div><ul><li>' + staffProfilesAddedCount + ' <a href="#added"> staff profiles have been ADDED </a>';
   htmlReport += '<li>' + staffProfilesRemovedCount + ' <a href="#removed"> staff profiles have been REMOVED </a>';
   htmlReport += '<li>' + staffProfilesDuplicateCount + ' <a href="#duplicate"> staff profiles are duplilcated </a></ul></div>';
-  htmlReport += '<hr>';
+  //htmlReport += '<hr>';
   //htmlReport += '<h2 id="added">Staff profiles ADDED to since previous report</h2>';
   htmlReport += '<h2 id="added">Staff profiles ADDED </h2>';
   htmlReport += '<div>' + staffProfilesAddedCount + ' staff profiles have been added </div>';
-  htmlReport += '<br>';
+  //htmlReport += '<br>';
   htmlReport += htmlFunctions.generateTable(newStaffProfiles);
-  htmlReport += '<hr>';
+  //htmlReport += '<hr>';
   htmlReport += '<h2 id="removed"> Staff profiles REMOVED</h2>';
   htmlReport += '<div>' + staffProfilesRemovedCount + ' staff profiles have been REMOVED </div>';
-  htmlReport += '<br>';
+  //htmlReport += '<br>';
   htmlReport += htmlFunctions.generateTable(removedStaffProfiles);
-  htmlReport += '<hr>';
+  //htmlReport += '<hr>';
   htmlReport += '<h2 id="duplicate">Staff profiles duplicated in current set </h2>';
   htmlReport += '<div>' + staffProfilesDuplicateCount + ' profiles are duplicated</div>';
-  htmlReport += '<br>';
+  //htmlReport += '<br>';
   htmlReport += htmlFunctions.generateTable(currentDataDuplicates);
-  htmlReport += '<hr>';
+  //htmlReport += '<hr>';
   htmlReport += '</body></html>';
   fs.writeFileSync('../../reports-data/staff-profile/data-diff/html/staff-profile-data-diff-' + DATE_TODAY + '.html', htmlReport);
   fs.writeFileSync('../../reports-data/staff-profile/data-diff/html/staff-profile-data-diff.html', htmlReport);
@@ -294,51 +308,72 @@ function performStaffProfileDiff(domain) {
   });
 
 
-  htmlReport =
-    `<html>
-    <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-      <style>
-      .chart-container { width:1000px; height:520px}
-          
-      html, body {
-      font-family: 'Roboto';
-      }</style>
-      <title>Staff profile data field analysis</title>
-      <!--Chart.js JS CDN-->
-      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  htmlReport = '<html><head>';
+  htmlReport += `<style>
+          table,
+          th,
+          td {
+              border: 1px solid black;
+              border-collapse: collapse;
+              border-color: #808080;
+          }
 
-    </head>
-    <body>`;
+          table {
+              width: 130%;
+          }
 
-  htmlReport += '<h1>Digital UX - Staff profile totals, additions and removals</h1>';
+          table.fixed {
+              table-layout: fixed;
+          }
+
+          td:nth-child(1) {
+              width: 12%;
+          }
+
+      </style>
+      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital UX Team - Staff Profile Dashboard</title>
+    <!--Chart.js JS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../../../css/dux-dashboard.css" />
+    <link
+      rel="icon"
+      href="http://dux.soton.ac.uk/drupal-reports/favicon/favicon.ico"
+    />`;
+
+
+
+  htmlReport += '</head><body>';
+
+  htmlReport += '<header id="mainheader"> <div class="container"> <h1>Digital UX Team - Staff profile totals, additions and removals</h1></div></header>';
+  htmlReport += '<section class="mainsection">';
+  htmlReport += '<div id="menu-cta"><a href="../../../../../faculty-readiness-dashboard/index.html"> <i class="fa fa-arrow-left" style="font-size:20px;color:#0074d9;"></i>&nbsp;&nbsp;Product dashboard</a></div>';
   //htmlReport += '<br>';
-  htmlReport += '<div>Report date : ' + today + '</div>';
-  htmlReport += '<hr>';
-  
+
+  //htmlReport += '<hr>';
+
   htmlReport += '<h2 id="added">Staff profiles totals </h2>';
-  htmlReport += '<br>';
+  htmlReport += '<div id="reportdate">Dashboard last updated on ' + today + '.</div>';
+  //htmlReport += '<br>';
   htmlReport += '<div><div class="chart-container"> <canvas id="' + staffTotalsChart + '"style="float:left;" style="max-height:200px;" style="max-width:200px;"></canvas></div></div>';
 
-  htmlReport += '<hr>';
+  //htmlReport += '<hr>';
   htmlReport += '<h2 id="added">Staff profiles additions </h2>';
-  htmlReport += '<br>';
+  //htmlReport += '<br>';
   htmlReport += '<div><div class="chart-container"> <canvas id="' + staffAdditionsChart + '" style="float:right;" style="height:75%;max-height:600" style="width:50%"></canvas></div></div>';
 
-  htmlReport += '<hr>';
+  //htmlReport += '<hr>';
   htmlReport += '<h2 id="added">Staff profiles removals </h2>';
-  htmlReport += '<br>';
+  //htmlReport += '<br>';
   htmlReport += '<div><div class="chart-container"> <canvas id="' + staffRemovalsChart + '" style="height:75%;max-height:600" style="width:75%;max-width:1200px"></canvas></div></div>';
-  htmlReport += '<hr>';
+  //htmlReport += '<hr>';
   htmlReport += '<h2>Summary</h2>';
   htmlReport += '<div>Summary of daily staff profile totals, additions and removals</div>';
-  htmlReport += '<br>';
+  //htmlReport += '<br>';
   htmlReport += htmlFunctions.generateTable(progressDataArray);
-  htmlReport += '<hr>';
+  //htmlReport += '<hr>';
 
 
   //create staff totals chart
@@ -346,8 +381,28 @@ function performStaffProfileDiff(domain) {
   htmlReport += createLineChart(staffAdditionsChart, graphLabelsStrings, graphAdditions, 'NUMBER OF PROFILES ADDED EVERY DAY', 'Number of new profiles added (public in Subscribe)');
   htmlReport += createLineChart(staffRemovalsChart, graphLabelsStrings, graphRemovals, 'NUMBER OF PROFILES REMOVED EVERY DAY', 'Number of profiles removed (private in Subscribe, leaver)');
 
-  htmlReport += '<hr>';
-  htmlReport += '</body></html>';
+  //htmlReport += '<hr>';
+  htmlReport += '</section>';
+  htmlReport += `<footer id="mainfooter">
+  <p>
+  Use the weekly delivery clinics (Wednesday, 10:15) with DUX, ADOFOS and
+  FOS teams for help with the dashboard. &nbsp;Contact
+  <a
+    href="mailto:paul.thwaite@soton.ac.uk?subject=Please invite me to a delivery clinic"
+    >Paul Thwaite</a
+  >
+  to attend a clinic.
+</p>
+<p>
+  Found a bug? &nbsp; Please
+  <a
+    href="http://dux.soton.ac.uk/faculty-readiness-dashboard/report-a-bug.html"
+    >report it on the bug report
+  </a>
+  page.
+</p>
+    </footer>`;
+  htmlReport += ' </body></html>';
   fs.writeFileSync('../../reports-data/staff-profile/data-diff/html/staff-profile-progress-charts-' + DATE_TODAY + '.html', htmlReport);
   fs.writeFileSync('../../reports-data/staff-profile/data-diff/html/staff-profile-progress-charts.html', htmlReport);
 

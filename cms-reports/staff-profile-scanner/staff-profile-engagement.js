@@ -191,9 +191,9 @@ function displayStaffProfileTakeUp(quantity) {
 
   htmlReport += '<header id="mainheader"> <div class="container"> <h1>Digital UX Team - Staff Profile Engagement</h1></div></header>';
   htmlReport += '<section class="mainsection">';
-  htmlReport += '<div id="reportdate">Updated on ' + today + '</div>';
-  htmlReport += '<hr>';
+  htmlReport += '<div id="menu-cta"><a href="../../../../../faculty-readiness-dashboard/index.html"> <i class="fa fa-arrow-left" style="font-size:20px;color:#0074d9;"></i>&nbsp;&nbsp;Product dashboard</a></div>';
   htmlReport += '<h2>Staff profile eligibility criteria</h2>';
+  htmlReport += '<div id="reportdate">Dashboard last updated on ' + today + '.</div>';
   htmlReport += '<div>The following job categories are eligible for a staff profile: </div > ';
   htmlReport += '<ul>';
   htmlReport += '<li>Education, Research and Enterprise (ERE) Level 4 and above, including Balanced, Education, Research, and Enterprise pathways  ';
@@ -204,7 +204,6 @@ function displayStaffProfileTakeUp(quantity) {
   htmlReport += '<div>Staff members must <a href="https://sotonac.sharepoint.com/teams/staff-profile-guidance/SitePages/add-content-staff-profile-first-time.aspx#what-to-update-in-subscribe">manually update Subscribe</a> to make their profile public. </div > ';
   htmlReport += '<div>The charts below provide an overview of the current engagement of staff profile for eligible staff.</div > ';
   htmlReport += '<section id="callout"><div>The team is investigating available data to provide greater detail by faculty.</div></section> ';
-  htmlReport += '<hr>';
   htmlReport += '<h2>Staff profile engagement for eligible staff</h2>';
   htmlReport += '<div>There are ' + totalNumberEligibleProfiles + ' staff who are eligible for a staff profile. </div > ';
   htmlReport += '<ul>';
@@ -214,14 +213,13 @@ function displayStaffProfileTakeUp(quantity) {
   htmlReport += '<br>';
   htmlReport += '<div><canvas id="StaffProfileEngagementAllStaff" style="height:50%;max-height:300" style="width:75%;max-width:300px"></canvas></div>';
   //htmlReport += '<br>';
-  htmlReport += '<hr>';
+
   htmlReport += '<h2>Staff profile engagement for live profiles on Drupal</h2>';
   htmlReport += '<div>There are ' + totalNumberLiveProfiles + ' staff who have a profile live on Drupal </div > ';
   htmlReport += '<div>The chart shows the breakdown of engagement in terms of the number of data fields completed.  </div > ';
   htmlReport += '<br>';
   htmlReport += '<div><canvas id="StaffProfileEngagementDrupalLive" style="height:50%;max-height:300" style="width:75%;max-width:300px"></canvas></div>';
   //htmlReport += '<br>';
-  htmlReport += '<hr>';
 
 
   let staffProfilesLiveTitle = 'STAFF PROFILES ENGAGEMENT - LIVE PROFILES - ' + totalNumberLiveProfiles;

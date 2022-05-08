@@ -443,9 +443,17 @@ async function generateReport(urllimit, domain, debug) {
 
           if (leadResearcherURL == personURL) {
             projectFaculty = personFaculty;
-            projectSchool = personSchool;
+
+            if (personSchool == '') {
+              projectSchool = 'School not set';
+            } else {
+              projectSchool = personSchool;
+            }
 
             console.log('==> faculty not found, using this from lead researcher ===> ' + projectFaculty + ' - ' + projectSchool);
+
+            //mark the lead researcher name with an * to indicate their faculty and school was derived differently
+            leadResearcherName += '<sup>*</sup>';
           }
         });
       }

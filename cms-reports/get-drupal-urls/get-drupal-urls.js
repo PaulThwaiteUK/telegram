@@ -283,6 +283,7 @@ async function getAllDrupalURLs(domainURL, domain) {
     var target = 100000;
     var allDrupalContentTypeULRS = [];
     var allDrupalContentTypeULRS_report = [];
+    var allDrupalContentTypeULRS_report_beta = [];
     var listContentTypes = [];
 
 
@@ -345,11 +346,13 @@ async function getAllDrupalURLs(domainURL, domain) {
             if (allDrupalContentTypeULRS[contentType] == undefined) {
                 allDrupalContentTypeULRS[contentType] = [];
                 allDrupalContentTypeULRS_report[contentType] = [];
+                allDrupalContentTypeULRS_report_beta[contentType] = [];
             }
 
             //allDrupalContentTypeULRS[contentType].push(jsonObj);
             allDrupalContentTypeULRS[contentType].push([pageURL]);
             allDrupalContentTypeULRS_report[contentType].push([contentType, 'https://oneweb.soton.ac.uk' + pageURL, title]);
+            allDrupalContentTypeULRS_report_beta[contentType].push([contentType, 'https://beta.southampton.ac.uk' + pageURL, title]);
         }
     }
 
@@ -409,7 +412,7 @@ async function getAllDrupalURLs(domainURL, domain) {
     fs.writeFileSync('../url-lists/course-page-urls-' + domain + '.json', coursePagesURLsString);
     fs.writeFileSync('../url-lists/course-page-urls-' + domain + '.txt', coursePagesURLs.toString());
 
-    
+
     //write html table for list of all content types and urls
     var today = new Date();
     today = today.toDateString() + ' ' + today.toLocaleTimeString();
@@ -429,15 +432,15 @@ async function getAllDrupalURLs(domainURL, domain) {
     var position = 0;
     numberContentTypes = uniqueListContentTypes.length;
     uniqueListContentTypes.forEach(contentType => {
-  
-      var contentTypeText = contentType.replace(/\s/g, "-");
-      var count = allDrupalContentTypeULRS_report[contentType].length;;
-      htmlReport += '<a href="#' + contentTypeText + '">' + contentType + ' (' + count + ')</a>';
 
-      if (position < numberContentTypes - 1) {
-        htmlReport += '&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;';
-      }
-      position++;
+        var contentTypeText = contentType.replace(/\s/g, "-");
+        var count = allDrupalContentTypeULRS_report[contentType].length;;
+        htmlReport += '<a href="#' + contentTypeText + '">' + contentType + ' (' + count + ')</a>';
+
+        if (position < numberContentTypes - 1) {
+            htmlReport += '&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;';
+        }
+        position++;
     })
 
     uniqueListContentTypes.forEach(contentType => {
@@ -453,7 +456,7 @@ async function getAllDrupalURLs(domainURL, domain) {
             console.log(data);
         }
 
-        var count = data.length-1;
+        var count = data.length - 1;
         var contentTypeText = contentType.replace(/\s/g, "-");
         htmlReport += '<h3 id=' + contentTypeText + '>' + contentType + ' (' + count + ')</h3>';
         htmlReport += '<div><a href="#jumptotop">Jump to top</a></div>';
@@ -466,6 +469,96 @@ async function getAllDrupalURLs(domainURL, domain) {
     htmlReport += '<br>'
     htmlReport += '</body></html>';
     fs.writeFileSync(REPORTS_DATA_FOLDER + 'drupal/content-types/html/drupal-content-types.html', htmlReport);
+
+
+    //
+    // BETA
+    //
+
+
+    //write html table for list of all content types and urls
+    var today = new Date();
+    today = today.toDateString() + ' ' + today.toLocaleTimeString();
+    var htmlReport = '';
+    contentTypeList.sort();
+    htmlReport += `
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research project data field analysis</title>
+<!--Chart.js JS CDN-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../../../css/dux-dashboard.css" />
+<link
+rel="icon"
+href="http://dux.soton.ac.uk/drupal-reports/favicon/favicon.ico"
+ <style>
+        
+  
+            table {
+                width: 100%;
+            }
+
+            
+  
+        </style>
+
+
+
+/>`;
+
+
+    htmlReport += '</head><body>';
+    htmlReport += '<header id="mainheader"> <div class="container"> <h1>Digital UX Team - Drupal page types on beta.southampton.ac.uk</h1></div></header>';
+    htmlReport += '<section class="mainsection">';
+    htmlReport += '<div id="jumptotop"</div>';
+    htmlReport += '<h2>Published pages by page type</h2>';
+    htmlReport += '<div>The dashboard was last updated on ' + today + '.</div>';
+    htmlReport += '<div id="jumptotop"</div>';
+    htmlReport += '<br>';
+    var position = 0;
+    numberContentTypes = uniqueListContentTypes.length;
+    uniqueListContentTypes.forEach(contentType => {
+
+        var contentTypeText = contentType.replace(/\s/g, "-");
+        var count = allDrupalContentTypeULRS_report_beta[contentType].length;;
+        htmlReport += '<a href="#' + contentTypeText + '">' + contentType + ' (' + count + ')</a>';
+
+        if (position < numberContentTypes - 1) {
+            htmlReport += '&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;';
+        }
+        position++;
+    })
+
+    uniqueListContentTypes.forEach(contentType => {
+
+        var data = allDrupalContentTypeULRS_report_beta[contentType];
+        //console.log(data);
+        data.sort(function (a, b) {
+            return b[1] - a[1];
+        })
+        data.unshift(['Content type', 'URL', 'Title']);
+
+        if (contentType == 'Research area') {
+            console.log(data);
+        }
+
+        var count = data.length - 1;
+        var contentTypeText = contentType.replace(/\s/g, "-");
+        htmlReport += '<h3 id=' + contentTypeText + '>' + contentType + ' (' + count + ')</h3>';
+        htmlReport += '<div><a href="#jumptotop">Jump to top</a></div>';
+        htmlReport += '<br>';
+        //htmlReport += '<br>';
+        htmlReport += htmlTable.generateTable(data, 'standard');
+        htmlReport += '<br>';
+    });
+
+    htmlReport += '<br>'
+    htmlReport += '</section>';
+    htmlReport += '</body></html>';
+    fs.writeFileSync(REPORTS_DATA_FOLDER + 'drupal/content-types/html/drupal-content-types-beta.html', htmlReport);
+
+
 
 
 

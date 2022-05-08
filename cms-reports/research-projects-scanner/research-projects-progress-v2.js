@@ -159,7 +159,7 @@ function generateStatusReport(projectData) {
   htmlReport += '<br>';
   htmlReport += htmlFunctions.generateTable(closedProjects);
   htmlReport += '<br>';
-  htmlReport += '<hr>';
+  // htmlReport += '<hr>';
 
   const TITLE = "RESEARCH PROJECTS BY STATUS";
 
@@ -223,7 +223,7 @@ function generateStatusReport(projectData) {
           })
         </script>`;
 
-  htmlReport += '<hr>';
+  //htmlReport += '<hr>';
   htmlReport += '</section>';
   htmlReport += `<footer id="mainfooter">
         <p>
@@ -517,13 +517,15 @@ function createResearchProjectProgressIndexPage(facultiesLabels, facultyCount, f
   htmlReport += '</head><body>';
   htmlReport += '<header id="mainheader"> <div class="container"> <h1>Digital UX Team - Research Project Dashboard</h1></div></header>';
   htmlReport += '<section class="mainsection">';
-  htmlReport += '<div id="reportdate">Updated on ' + today + '</div>';
-  htmlReport += '<hr>';
+  htmlReport += '<div id="menu-cta"><a href="../../../../../faculty-readiness-dashboard/index.html"> <i class="fa fa-arrow-left" style="font-size:20px;color:#0074d9;"></i>&nbsp;&nbsp;Product dashboard</a></div>';
+
+  //htmlReport += '<hr>';
   htmlReport += '<h2>Number of research projects by faculty </h2>';
+  htmlReport += '<div id="reportdate">The dashboard was last updated on ' + today + '.</div>';
   //htmlReport += '<div> </div>';
   htmlReport += '<div><canvas id="myChart" style="height:50%;max-height:300" style="width:75%;max-width:300px"></canvas></div>';
   //htmlReport += '<br>';
-  htmlReport += '<hr>';
+  //htmlReport += '<hr>';
   htmlReport += '<h2>Faculty progress</h2>';
   htmlReport += '<div>Select your faculty below to see the current progress.  </div>';
   //htmlReport += '<br>';
@@ -539,7 +541,7 @@ function createResearchProjectProgressIndexPage(facultiesLabels, facultyCount, f
   htmlReport += '<li><a href="research-projects-faculty-progress-professional-services.html" > Professional Services</a>';
   htmlReport += '<li><a href="research-projects-faculty-progress-faculty-not-set.html" > Faculty not set</a>';
   htmlReport += '</ul>';
-  htmlReport += '<hr>';
+  //htmlReport += '<hr>';
 
   var chartTitle = 'RESEARCH PROJECTS BY FACULTY - ' + facultyCountTotal;
 
@@ -732,7 +734,7 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
   //htmlReport += '<br>';
   htmlReport += '<div>The tables below illustrate the current state of individual research project pages. </div>';
   //htmlReport += '<br>';
-  htmlReport += '<div>The report identifies which fields contain data for each member research project in your faculty. The report is broken down by school. </div>';
+  htmlReport += '<div>The report identifies which fields contain data for each member research project in your faculty. The report is broken down by school.  Where a project\'s faculty and school is not set the lead researcher\'s faculty and school is used instead.  These projects are indicated by a <sup>*</sup> adjacent to the lead researcher\'s name. </div>';
   //htmlReport += '<br>';
   htmlReport += '<ul><li>YES = data exists on the research project page. ';
   htmlReport += '<li>NO = data does not exist on the research project page.  The project lead researcher needs to update their project in \'Pure\' using the instructions above. </ul>';
@@ -817,7 +819,7 @@ function generateHTMLReport(facultyReportData, faculty, schools, departments, pr
   htmlReport += createFacultyBarChart(facultyProfiles, faculty);
 
   //save the html file
-  htmlReport += '<hr>';
+  //htmlReport += '<hr>';
   htmlReport += '</section>';
   htmlReport += `<footer id="mainfooter">
   <p>
@@ -1020,9 +1022,9 @@ function setupHTMLReport(faculty) {
   htmlReport += '</head><body>';
   htmlReport += '<header id="mainheader"> <div class="container"> <h1>Digital UX Team - Research Project Dashboard - ' + faculty + '</h1></div></header>';
   htmlReport += '<section class="mainsection">';
-  htmlReport += '<div id="reportdate">Updated on ' + today + '</div>';
-  htmlReport += '<hr>';
+  htmlReport += '<div id="menu-cta"><a href="research-projects-faculty-progress.html"> <i class="fa fa-arrow-left" style="font-size:20px;color:#0074d9;"></i>&nbsp;&nbsp;Research project dashboard</a></div>';
   htmlReport += '<h2>How to use this report</h2>';
+  htmlReport += '<div id="reportdate">The dashboard was last updated on ' + today + '.</div>';
   htmlReport += '<div>The new research projects are primarily driven by data from \'Pure\'.  Project owners update \'Pure\' and the data automatically displays on their research project page.  </div>';
   //htmlReport += '<br>';
   htmlReport += '<div>A research project page is made up of 13 data fields.  </div>';
@@ -1032,7 +1034,6 @@ function setupHTMLReport(faculty) {
   htmlReport += '<li>Images, video and partner logos are provided to the Digital User Experience team by project owners. See the <a href="https://sotonac.sharepoint.com/teams/research-project-guidance/SitePages/edit-a-research-project.aspx" >images, video and partner logos</a> section of the <a href="https://sotonac.sharepoint.com/teams/research-project-guidance" >research project guideance</a> Sharepoint site.';
   htmlReport += '</ul>';
   htmlReport += 'The <a href="https://sotonac.sharepoint.com/teams/research-project-guidance" > resease project guidance</a> Sharepoint site provides guidance on how to update a research project.';
-  htmlReport += '<hr>';
   htmlReport += '<h2>Summary of progress</h2>';
   htmlReport += '<div>The chart below illustrates your faculty\'s current research project readiness.  It shows the number of data fields containing data across all research projects assigned to your faculty (based on a project\'s lead researcher).   </div>';
   //htmlReport += '<br>';
@@ -1182,19 +1183,18 @@ function generateFunderReport(projectData) {
   htmlReport += '</head><body>';
   htmlReport += '<header id="mainheader"> <div class="container"> <h1>Digital UX Team - Research Project Funders</h1></div></header>';
   htmlReport += '<section class="mainsection">';
-  htmlReport += '<div id="reportdate">Updated on ' + today + '</div>';
-  htmlReport += '<hr>';
+  htmlReport += '<div id="menu-cta"><a href="../../../../../faculty-readiness-dashboard/index.html"> <i class="fa fa-arrow-left" style="font-size:20px;color:#0074d9;"></i>&nbsp;&nbsp;Product dashboard</a></div>';
+
   htmlReport += '<h2>UKRI funder summary</h2>';
+  htmlReport += '<div id="reportdate">Dashboard last updated on ' + today + '.</div>';
   htmlReport += '<div>A summary of all UKRI funders associated with research projects.  There are ' + funderList.length + ' funders.</div>';
   htmlReport += '<br>';
   htmlReport += '<div><canvas id="myChart" style="height:75%;max-height:600" style="width:75%;max-width:1200px"></canvas></div>';
-  htmlReport += '<hr>';
   htmlReport += '<h2>List of projects for each funder</h2>';
   htmlReport += '<div>A list of UKRI research projects associated with a funder.  </div>';
   htmlReport += '<br>';
   htmlReport += htmlFunctions.generateTable(projectFunderTable);
   htmlReport += '<br>';
-  htmlReport += '<hr>';
 
   const TITLE = "RESEARCH PROJECTS BY FUNDER";
 
@@ -1280,7 +1280,6 @@ function generateFunderReport(projectData) {
           })
         </script>`
 
-  htmlReport += '<hr>';
   htmlReport += '</section>';
   htmlReport += `<footer id="mainfooter">
         <p>
